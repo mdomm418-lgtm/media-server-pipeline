@@ -6,6 +6,52 @@ This repository contains the complete set of cron jobs, watchdogs, and automatio
 
 The media stack is designed to be fully automated from discovery to playback, heavily utilizing virtual filesystems (FUSE) to stream Usenet directly without requiring local storage for the entire library.
 
+```mermaid
+graph TD
+    %% Styling
+    classDef external fill:#f9f9f9,stroke:#333,stroke-width:2px;
+    classDef core fill:#d4e6f1,stroke:#2874a6,stroke-width:2px;
+    classDef watchdog fill:#fad7a1,stroke:#d68910,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef storage fill:#d5f5e3,stroke:#239b56,stroke-width:2px;
+    classDef shoko fill:#e8daef,stroke:#8e44ad,stroke-width:2px;
+
+    %% Nodes
+    ListSync["📋 ListSync<br/>(Trakt, MDblist)"]:::external
+    SonarrRadarr["🎬 Sonarr / Radarr<br/>(Library Management)"]:::core
+    NzbDAV["🌐 NzbDAV<br/>(Usenet FUSE Mount)"]:::storage
+    Usenet["☁️ Usenet Provider"]:::external
+    Library["📁 Media Library<br/>(/data/anime, /data/tv)"]:::storage
+    Jellyfin["▶️ Jellyfin<br/>(Media Server)"]:::core
+    ShokoAutolink["🤖 Shoko Autolink<br/>(cron)"]:::shoko
+    Shoko["🌸 Shoko Server"]:::shoko
+    AniDB["🌍 AniDB API"]:::external
+    
+    %% Watchdogs
+    AuthGuard["🛡️ nzbdav_auth_guard<br/>(Circuit Breaker)"]:::watchdog
+    MediaMonitor["🛡️ media_stack_monitor<br/>(DB Protector)"]:::watchdog
+
+    %% Flow
+    ListSync -- "Adds Shows/Movies" --> SonarrRadarr
+    SonarrRadarr -- "Searches & Requests" --> NzbDAV
+    NzbDAV -- "Streams files" --> Usenet
+    
+    AuthGuard -. "Monitors & Halts on Auth Storms" .-> NzbDAV
+    
+    NzbDAV -- "Imports to" --> Library
+    SonarrRadarr -. "Manages" .-> Library
+    
+    %% Anime Flow
+    Library -- "Anime imports" --> ShokoAutolink
+    ShokoAutolink -- "Triggers Scan & Links" --> Shoko
+    Shoko -- "Fetches Metadata" --> AniDB
+    Shoko -. "Organizes" .-> Library
+    
+    %% Playback Flow
+    Library -- "Reads Media" --> Jellyfin
+    MediaMonitor -. "Freezes scans if mount drops" .-> Jellyfin
+    NzbDAV -. "Mount health" .-> MediaMonitor
+```
+
 ### 1. Discovery & Sync (`ListSync`)
 The pipeline begins with automated list synchronization. Shows, movies, and anime added to lists (Trakt, MDblist, AniDB, etc.) are automatically synced to **Sonarr** and **Radarr**.
 
