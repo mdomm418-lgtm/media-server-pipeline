@@ -1,0 +1,23 @@
+# Mount / refresh (every 15 min)
+*/15 * * * * /usr/bin/python3 /home/admin/media_stack_monitor.py >> /home/admin/monitor.log 2>&1
+*/15 * * * * /usr/bin/python3 /home/admin/jellyfin_safe_refresh_wrapper.py >> /home/admin/jellyfin-refresh.log 2>&1
+
+# Library maintenance — every 2 days at 4:00 AM (staggered)
+0 4 */2 * * /usr/bin/python3 /opt/dedup_episodes.py --dry-run --root all --report /home/admin/dedup-reports/cron-latest.json >> /home/admin/dedup-reports/cron.log 2>&1
+15 4 */2 * * /usr/bin/python3 /opt/sanitize_library.py --dry-run --fix all --report /home/admin/dedup-reports/sanitize-cron-latest.json >> /home/admin/dedup-reports/sanitize-cron.log 2>&1
+30 4 */2 * * /usr/bin/python3 /home/admin/library_stream_health.py --execute --report /home/admin/dedup-reports/stream-health-cron-latest.json >> /home/admin/dedup-reports/stream-health-cron.log 2>&1
+30 4 */2 * * /usr/bin/python3 /home/admin/sanitize_movies.py --execute --report /home/admin/dedup-reports/movie-sanitize-cron-latest.json >> /home/admin/dedup-reports/movie-sanitize-cron.log 2>&1
+
+# Backlog fetch — 2 series + 3 movies per 30 min
+*/30 * * * * flock -n /home/admin/backlog-fetcher/.lock /usr/bin/python3 /home/admin/backlog_fetcher.py --execute >> /home/admin/backlog-fetcher.log 2>&1
+
+# Import watchdogs
+*/15 * * * * flock -n /home/admin/backlog-fetcher/import-guard.lock /usr/bin/python3 /home/admin/sonarr_import_guard.py --execute >> /home/admin/backlog-fetcher/import-guard.log 2>&1
+*/15 * * * * flock -n /home/admin/stage-import-tv.lock /usr/bin/python3 /home/admin/stage_sonarr_imports_tv.py --execute >> /home/admin/stage-import-tv.log 2>&1
+*/10 * * * * flock -n /home/admin/sonarr-import-rescue.lock /usr/bin/python3 /home/admin/sonarr_import_rescue.py --execute >> /home/admin/sonarr-import-rescue.log 2>&1
+
+# NzbDAV Usenet auth-storm circuit breaker (every 5 min)
+*/5 * * * * flock -n /home/admin/nzbdav-auth-guard.lock /usr/bin/python3 /home/admin/nzbdav_auth_guard.py --execute >> /home/admin/nzbdav-auth-guard.log 2>&1
+
+# Dynamic DNS
+*/10 * * * * /usr/bin/python3 /opt/plex-stack/scripts/update_cloudflare_dns.py >> /opt/plex-stack/scripts/cloudflare-ddns.log 2>&1
