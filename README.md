@@ -53,17 +53,17 @@ graph TD
 ```
 
 ### 1. Discovery & Sync (`ListSync`)
-The pipeline begins with automated list synchronization. Shows, movies, and anime added to lists (Trakt, MDblist, AniDB, etc.) are automatically synced to **Sonarr** and **Radarr**.
+The pipeline begins with automated list synchronization. Shows, movies, and anime added to lists (Trakt, MDblist, AniDB, etc.) are automatically synced to **[Sonarr](https://github.com/Sonarr/Sonarr/)** and **[Radarr](https://github.com/Radarr/Radarr)** using **[ListSync](https://github.com/Woahai321/list-sync)**.
 
 ### 2. Management & Search (`Sonarr` / `Radarr`)
 Sonarr and Radarr serve as the central library managers. They search indexers for releases and send them to the download client. However, instead of downloading files locally to a disk, the pipeline utilizes a virtual filesystem approach.
 
 ### 3. Virtual Filesystem (`NzbDAV` & `rclone` / FUSE)
-Releases are streamed on-the-fly rather than downloaded. **NzbDAV** mounts Usenet providers as a local filesystem. Sonarr and Radarr are configured to interact with this mount. 
+Releases are streamed on-the-fly rather than downloaded. **[NzbDAV](https://github.com/nzbdav-dev/nzbdav)** mounts Usenet providers as a local filesystem. Sonarr and Radarr are configured to interact with this mount. 
 * To prevent Usenet provider bans from aggressive retries during network blips, `nzbdav_auth_guard.py` actively monitors connection pools and halts the container to act as a circuit breaker.
 
 ### 4. Anime Linking (`Shoko` & `Shoko Autolink`)
-For anime, files imported by Sonarr are dropped into the library (`/data/anime/`). Because Shoko cannot automatically detect these filesystem changes on a network/FUSE mount, the **Shoko Autolink** sub-module explicitly triggers Shoko to scan the drop folders via API. 
+For anime, files imported by Sonarr are dropped into the library (`/data/anime/`). Because **[Shoko Server](https://github.com/ShokoAnime/ShokoServer)** cannot automatically detect these filesystem changes on a network/FUSE mount, the **Shoko Autolink** sub-module explicitly triggers Shoko to scan the drop folders via API. 
 
 **Shoko Server Hashing (The Primary Mapper)**: 
 When Shoko scans the new files, it natively calculates their ED2K hash and cross-references it against the massive AniDB database. If the exact file hash is recognized (common for standard anime release groups), Shoko automatically links the file to the correct AniDB episode and pulls down the full metadata seamlessly.
@@ -116,3 +116,15 @@ The `shoko-autolink/` directory contains the complete pipeline for bridging Sona
 1. Copy `.env.example` to `.env` and fill in your API keys and configuration.
 2. For Shoko Autolink, copy `shoko-autolink/config.example.yaml` to `shoko-autolink/config.yaml`.
 3. Review `crontab.example` to see how these scripts are scheduled and executed in a production environment using `flock` to prevent overlapping runs.
+
+---
+
+## Acknowledgments & Credits
+
+This automated ecosystem stands on the shoulders of several incredible open-source projects. Huge thanks to the developers and communities behind:
+
+* **[ListSync](https://github.com/Woahai321/list-sync)** - Automated Trakt/MDblist synchronization.
+* **[Sonarr](https://github.com/Sonarr/Sonarr/)** - Smart PVR for newsgroup and bittorrent users.
+* **[Radarr](https://github.com/Radarr/Radarr)** - A fork of Sonarr to work with movies à la Couchpotato.
+* **[NzbDAV](https://github.com/nzbdav-dev/nzbdav)** - Usenet WebDAV bridge allowing direct streaming of newsgroup content.
+* **[Shoko Server](https://github.com/ShokoAnime/ShokoServer)** - The core anime management server and AniDB cross-referencing engine.
