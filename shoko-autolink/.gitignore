@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+venv/
+.env
+config.yaml
+state/
+data/anime-list-full.json
+data/anime-offline-database-minified.json
+data/*.xml
+*.log
+.lock

@@ -1,0 +1,39 @@
+shoko:
+  base_url: "http://127.0.0.1:8111"
+  username: "${SHOKO_USERNAME}"
+  password: "${SHOKO_PASSWORD}"
+  device: "shoko-autolink-cron"
+
+sonarr:
+  base_url: "http://127.0.0.1:8989"
+  api_key: "${SONARR_API_KEY}"
+  anime_root_prefix: "/data/anime"
+  require_standard_names: true
+
+anime_lists:
+  primary_url: "https://raw.githubusercontent.com/Anime-Lists/anime-lists/master/anime-list.xml"
+  fallback_url: "https://raw.githubusercontent.com/Fribb/anime-lists/master/anime-list-full.json"
+  cache_path: "/home/admin/shoko-autolink/data/anime-list.xml"
+  refresh_interval_days: 7
+
+paths:
+  anime_host_root: "/mnt/media/anime"
+  shoko_import_prefix: "/mnt/anime"
+  data_dir: "/home/admin/shoko-autolink/data"
+  state_dir: "/home/admin/shoko-autolink/state"
+  log_dir: "/home/admin/shoko-autolink/logs"
+
+behavior:
+  dry_run: false
+  max_series_per_run: 100
+  max_files_per_run: 500
+  min_parse_confidence: 0.6
+  min_resolve_confidence: 0.85
+  learn_mappings: true
+  use_batch_link_from_series: false
+  lock_file: "/home/admin/shoko-autolink/state/.lock"
+  shoko_request_delay_ms: 200
+  anidb_refresh_delay_sec: 8
+
+episode_types:
+  map_specials: true

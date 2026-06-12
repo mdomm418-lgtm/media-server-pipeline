@@ -1,0 +1,3 @@
+# Cron example for Shoko Autolink
+# Runs the linker script every 30 minutes. It uses flock to prevent overlapping runs.
+*/30 * * * * flock -n /opt/shoko-autolink/state/.lock bash -c 'set -a && source /opt/shoko-autolink/.env && set +a && /opt/shoko-autolink/venv/bin/python /opt/shoko-autolink/link_shoko_unrecognized.py run --config /opt/shoko-autolink/config.yaml --no-lock' >> /opt/shoko-autolink/logs/cron.log 2>&1

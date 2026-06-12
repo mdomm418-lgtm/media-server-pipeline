@@ -17,9 +17,13 @@ Releases are streamed on-the-fly rather than downloaded. **NzbDAV** mounts Usene
 * To prevent Usenet provider bans from aggressive retries during network blips, `nzbdav_auth_guard.py` actively monitors connection pools and halts the container to act as a circuit breaker.
 
 ### 4. Anime Linking (`Shoko` & `Shoko Autolink`)
-For anime, files imported by Sonarr are dropped into the library (`/data/anime/`). 
-* Because Shoko cannot automatically detect these filesystem changes on a network/FUSE mount, `link_shoko_unrecognized.py` (see the Shoko Autolink project) triggers Shoko to scan the drop folders. 
-* It then uses custom parsers and AniDB maps to correctly resolve complex naming conventions and split-cour seasons, linking the files to their correct AniDB entries.
+For anime, files imported by Sonarr are dropped into the library (`/data/anime/`). Because Shoko cannot automatically detect these filesystem changes on a network/FUSE mount, the **Shoko Autolink** sub-module triggers Shoko to scan the drop folders. 
+
+It automatically detects and links TVDB-based anime episodes from Sonarr to their proper AniDB counterparts within Shoko, managing complex mapping rules, naming conventions, and API edge cases:
+- **Smart Parsers**: Uses heuristic-based parsers to intelligently match sub-group tagged anime files (e.g., `[SubGroup] Series Name - 05 [1080p].mkv`).
+- **Episode Offset Mappings**: Resolves complicated season/episode mappings (like split-cour series) by translating continuous absolute TVDB episodes to split AniDB seasons.
+- **Fuzzy Name Matching**: Standardizes spaces and removes special characters to correctly link folders that have slightly different names in Sonarr vs. Shoko.
+- **AniDB Ban Resilience**: Actively monitors Shoko's live API for HTTP ban statuses. If Shoko gets temporarily banned from AniDB, the script intelligently skips metadata refresh requests to prevent ban extensions, falling back to cached local mapping data!
 
 ### 5. Media Server (`Jellyfin`)
 Jellyfin serves the media. Because Jellyfin's SQLite database is highly sensitive to underlying FUSE mounts disappearing (which can cause Jellyfin to assume the media was deleted and aggressively scrub its database), several watchdogs are employed:
@@ -42,6 +46,12 @@ The `scripts/` directory contains all the specialized automation that glues this
 - **`stage_sonarr_imports_tv.py`**: Handles staging and parsing of obfuscated Usenet TV imports.
 - **`backlog_fetcher.py`**: Throttles and manages backlog fetching to prevent API rate limits and indexer bans.
 
+### Shoko Autolink
+The `shoko-autolink/` directory contains the complete pipeline for bridging Sonarr and Shoko:
+- **`linker.py`**: The core execution engine.
+- **`parsers/`**: Custom regex parsers for complex anime release groups.
+- **`resolver.py`**: Handles ID mapping via `anime-lists` XML/JSON caches.
+
 ### Library Maintenance
 - **`dedup_episodes.py`**: Cleans up duplicate episodes from Sonarr.
 - **`sanitize_library.py`**: Cleans up unwanted files and metadata from the library.
@@ -54,4 +64,5 @@ The `scripts/` directory contains all the specialized automation that glues this
 ## Setup
 
 1. Copy `.env.example` to `.env` and fill in your API keys and configuration.
-2. Review `crontab.example` to see how these scripts are scheduled and executed in a production environment using `flock` to prevent overlapping runs.
+2. For Shoko Autolink, copy `shoko-autolink/config.example.yaml` to `shoko-autolink/config.yaml`.
+3. Review `crontab.example` to see how these scripts are scheduled and executed in a production environment using `flock` to prevent overlapping runs.

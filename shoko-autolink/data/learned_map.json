@@ -1,0 +1,1850 @@
+{
+  "Dorohedoro::S01": {
+    "anidb_id": 14483,
+    "tvdb_id": 370761,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-06-09T20:33:46.891819+00:00"
+  },
+  "My Teen Romantic Comedy SNAFU::S01": {
+    "anidb_id": 9310,
+    "tvdb_id": 267435,
+    "source": "cron",
+    "linked": 12,
+    "at": "2026-05-23T00:00:12.574898+00:00"
+  },
+  "Banana Fish::S01": {
+    "anidb_id": 13536,
+    "tvdb_id": 343384,
+    "source": "cron",
+    "linked": 23,
+    "at": "2026-05-23T00:07:47.423529+00:00"
+  },
+  "Chainsaw Man::S01": {
+    "anidb_id": 15914,
+    "tvdb_id": 397934,
+    "source": "cron",
+    "linked": 5,
+    "at": "2026-05-23T00:07:58.573070+00:00"
+  },
+  "Cowboy Bebop::S01": {
+    "anidb_id": 23,
+    "tvdb_id": 76885,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-23T00:08:07.933401+00:00"
+  },
+  "Daemons of the Shadow Realm::S01": {
+    "anidb_id": 19451,
+    "tvdb_id": 452711,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T15:00:58.384610+00:00"
+  },
+  "I Want to End This Love Game::S01": {
+    "anidb_id": 19382,
+    "tvdb_id": 464717,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T21:03:15.089094+00:00"
+  },
+  "KILL BLUE::S01": {
+    "anidb_id": 19546,
+    "tvdb_id": 467414,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T20:36:57.842970+00:00"
+  },
+  "MARRIAGETOXIN::S01": {
+    "anidb_id": 19625,
+    "tvdb_id": 468734,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T15:01:59.779792+00:00"
+  },
+  "My Hero Academia - Vigilantes::S01": {
+    "anidb_id": 19069,
+    "tvdb_id": 458058,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T13:02:44.058935+00:00"
+  },
+  "NIPPON SANGOKU - The Three Nations of the Crimson Sun::S01": {
+    "anidb_id": 19861,
+    "tvdb_id": 473228,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-06-09T21:35:36.489974+00:00"
+  },
+  "One Piece::S01": {
+    "anidb_id": 69,
+    "tvdb_id": 81797,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T20:39:19.790355+00:00"
+  },
+  "Oshi no Ko::S01": {
+    "anidb_id": 18086,
+    "tvdb_id": 421069,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-23T00:11:49.357361+00:00"
+  },
+  "SNOWBALL EARTH::S01": {
+    "anidb_id": 19477,
+    "tvdb_id": 465925,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T20:39:57.418407+00:00"
+  },
+  "Solo Leveling::S01": {
+    "anidb_id": 17495,
+    "tvdb_id": 389597,
+    "source": "cron",
+    "linked": 8,
+    "at": "2026-05-23T00:12:16.266026+00:00"
+  },
+  "The Apothecary Diaries::S01": {
+    "anidb_id": 18562,
+    "tvdb_id": 431162,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-05-23T00:12:47.568395+00:00"
+  },
+  "The Future Diary::S01": {
+    "anidb_id": 8395,
+    "tvdb_id": 249827,
+    "source": "cron",
+    "linked": 24,
+    "at": "2026-05-23T00:13:25.013670+00:00"
+  },
+  "Code Geass - Lelouch of the Rebellion::S01": {
+    "anidb_id": 4521,
+    "tvdb_id": 79525,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-06-10T03:32:08.185461+00:00"
+  },
+  "Code Geass - Lelouch of the Rebellion::S02": {
+    "anidb_id": 5373,
+    "tvdb_id": 79525,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-10T03:32:08.208249+00:00"
+  },
+  "Death Parade::S01": {
+    "anidb_id": 10905,
+    "tvdb_id": 289177,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-05-23T00:28:15.169085+00:00"
+  },
+  "Dorohedoro::S02": {
+    "anidb_id": 18397,
+    "tvdb_id": 370761,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T20:33:46.897919+00:00"
+  },
+  "InuYasha::S01": {
+    "anidb_id": 144,
+    "tvdb_id": 71361,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-06-01T11:31:09.777806+00:00"
+  },
+  "JUJUTSU KAISEN::S02": {
+    "anidb_id": 17196,
+    "tvdb_id": 377543,
+    "source": "cron",
+    "linked": 19,
+    "at": "2026-05-23T00:29:14.020544+00:00"
+  },
+  "Solo Leveling::S02": {
+    "anidb_id": 18576,
+    "tvdb_id": 389597,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-23T00:29:27.563238+00:00"
+  },
+  "That Time I Got Reincarnated as a Slime::S03": {
+    "anidb_id": 17709,
+    "tvdb_id": 352408,
+    "source": "cron",
+    "linked": 12,
+    "at": "2026-05-23T00:29:46.252697+00:00"
+  },
+  "The Angel Next Door Spoils Me Rotten::S01": {
+    "anidb_id": 17108,
+    "tvdb_id": 414221,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-05-23T00:30:26.733172+00:00"
+  },
+  "The Angel Next Door Spoils Me Rotten::S02": {
+    "anidb_id": 18235,
+    "tvdb_id": 414221,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T04:36:21.095788+00:00"
+  },
+  "The Beginning After the End::S02": {
+    "anidb_id": 19381,
+    "tvdb_id": 455684,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-10T17:05:26.214919+00:00"
+  },
+  "Yu Yu Hakusho::S01": {
+    "anidb_id": 312,
+    "tvdb_id": 76665,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-06-07T00:34:50.423517+00:00"
+  },
+  "One Piece::S04": {
+    "anidb_id": 69,
+    "tvdb_id": 81797,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T13:04:08.809040+00:00"
+  },
+  "One Piece::S05": {
+    "anidb_id": 69,
+    "tvdb_id": 81797,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T13:04:08.813242+00:00"
+  },
+  "Pok\u00e9mon::S18": {
+    "anidb_id": 12407,
+    "tvdb_id": 76703,
+    "source": "cron",
+    "linked": 43,
+    "at": "2026-05-24T00:20:02.064952+00:00"
+  },
+  "Pok\u00e9mon::S20": {
+    "anidb_id": 17777,
+    "tvdb_id": 76703,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T21:08:31.383559+00:00"
+  },
+  "Agents of the Four Seasons - Dance of Spring::S01": {
+    "anidb_id": 19283,
+    "tvdb_id": 462446,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T01:30:43.090834+00:00"
+  },
+  "Gals Can't Be Kind to Otaku!!::S01": {
+    "anidb_id": 19628,
+    "tvdb_id": 468761,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-10T16:02:22.435629+00:00"
+  },
+  "LIAR GAME (2026)::S01": {
+    "anidb_id": 19538,
+    "tvdb_id": 467209,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T00:01:51.648068+00:00"
+  },
+  "Oshi no Ko::S02": {
+    "anidb_id": 18086,
+    "tvdb_id": 421069,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-24T00:25:17.464595+00:00"
+  },
+  "Oshi no Ko::S03": {
+    "anidb_id": 18901,
+    "tvdb_id": 421069,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-24T00:25:17.465317+00:00"
+  },
+  "The Warrior Princess and the Barbaric King::S01": {
+    "anidb_id": 18898,
+    "tvdb_id": 455164,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-04T00:06:44.230320+00:00"
+  },
+  "Welcome to Demon School! Iruma-kun::S04": {
+    "anidb_id": 18995,
+    "tvdb_id": 369144,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T21:17:46.293348+00:00"
+  },
+  "The Ramparts of Ice::S01": {
+    "anidb_id": 19139,
+    "tvdb_id": 459627,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T02:33:12.981924+00:00"
+  },
+  "Rooster Fighter::S01": {
+    "anidb_id": 18772,
+    "tvdb_id": 452575,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-05T07:32:41.243691+00:00"
+  },
+  "Wistoria - Wand and Sword::S02": {
+    "anidb_id": 18889,
+    "tvdb_id": 445829,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T09:33:38.621705+00:00"
+  },
+  "Farming Life in Another World::S02": {
+    "anidb_id": 19506,
+    "tvdb_id": 418367,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T03:01:11.851462+00:00"
+  },
+  "Wistoria - Wand and Sword::S01": {
+    "anidb_id": 18482,
+    "tvdb_id": 445829,
+    "source": "cron",
+    "linked": 11,
+    "at": "2026-06-05T14:34:18.552532+00:00"
+  },
+  "I Made Friends with the Second Prettiest Girl in My Class::S01": {
+    "anidb_id": 18209,
+    "tvdb_id": 440057,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T15:31:23.176195+00:00"
+  },
+  "Classroom of the Elite::S04": {
+    "anidb_id": 18844,
+    "tvdb_id": 329822,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-10T13:01:51.853808+00:00"
+  },
+  "Chained Soldier::S01": {
+    "anidb_id": 16982,
+    "tvdb_id": 412656,
+    "source": "cron",
+    "linked": 8,
+    "at": "2026-05-27T19:00:33.984009+00:00"
+  },
+  "Classroom of the Elite::S02": {
+    "anidb_id": 17208,
+    "tvdb_id": 329822,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-06-03T21:52:56.916589+00:00"
+  },
+  "Vision of Escaflowne::S01": {
+    "anidb_id": 184,
+    "tvdb_id": 77248,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-06-03T22:34:39.203910+00:00"
+  },
+  "That Time I Got Reincarnated as a Slime::S04": {
+    "anidb_id": 18884,
+    "tvdb_id": 352408,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-06-06T19:34:26.120464+00:00"
+  },
+  "One Piece::S17": {
+    "anidb_id": 69,
+    "tvdb_id": 81797,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-06-03T22:32:33.038134+00:00"
+  },
+  "One Piece::S18": {
+    "anidb_id": 69,
+    "tvdb_id": 81797,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-29T22:30:55.285152+00:00"
+  },
+  "Pok\u00e9mon::S01": {
+    "anidb_id": 230,
+    "tvdb_id": 76703,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-29T22:31:42.923419+00:00"
+  },
+  "Pok\u00e9mon::S19": {
+    "anidb_id": 15067,
+    "tvdb_id": 76703,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-05-30T01:31:04.047175+00:00"
+  },
+  "One Piece::S19": {
+    "anidb_id": 69,
+    "tvdb_id": 81797,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-03T22:32:33.040126+00:00"
+  },
+  "Pok\u00e9mon::S02": {
+    "anidb_id": 230,
+    "tvdb_id": 76703,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-30T01:31:04.048268+00:00"
+  },
+  "Akane-banashi::S01": {
+    "anidb_id": 19513,
+    "tvdb_id": 466488,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T02:30:26.778213+00:00"
+  },
+  "MAO::S01": {
+    "anidb_id": 19469,
+    "tvdb_id": 465787,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T21:04:38.676512+00:00"
+  },
+  "Doraemon (1979)::S01": {
+    "anidb_id": 1078,
+    "tvdb_id": 252696,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-05-31T12:00:48.548499+00:00"
+  },
+  "Naruto Shippuden::S13": {
+    "anidb_id": 4880,
+    "tvdb_id": 79824,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-31T13:03:12.888789+00:00"
+  },
+  "Naruto Shippuden::S02": {
+    "anidb_id": 4880,
+    "tvdb_id": 79824,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-11T03:03:03.016180+00:00"
+  },
+  "Naruto Shippuden::S01": {
+    "anidb_id": 4880,
+    "tvdb_id": 79824,
+    "source": "cron",
+    "linked": 8,
+    "at": "2026-05-31T13:03:12.886559+00:00"
+  },
+  "Naruto Shippuden::S07": {
+    "anidb_id": 4880,
+    "tvdb_id": 79824,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-31T08:01:59.983775+00:00"
+  },
+  "Naruto Shippuden::S10": {
+    "anidb_id": 4880,
+    "tvdb_id": 79824,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-31T09:31:47.974521+00:00"
+  },
+  "Naruto Shippuden::S11": {
+    "anidb_id": 4880,
+    "tvdb_id": 79824,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-05-31T08:01:59.980712+00:00"
+  },
+  "Naruto Shippuden::S03": {
+    "anidb_id": 4880,
+    "tvdb_id": 79824,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-05-31T13:03:12.892834+00:00"
+  },
+  "Pok\u00e9mon::S04": {
+    "anidb_id": 230,
+    "tvdb_id": 76703,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-31T08:02:54.701457+00:00"
+  },
+  "Naruto Shippuden::S04": {
+    "anidb_id": 4880,
+    "tvdb_id": 79824,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-31T18:07:17.422598+00:00"
+  },
+  "Pok\u00e9mon::S03": {
+    "anidb_id": 230,
+    "tvdb_id": 76703,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-05-31T10:01:42.368198+00:00"
+  },
+  "Fairy Tail::S01": {
+    "anidb_id": 6662,
+    "tvdb_id": 114801,
+    "source": "cron",
+    "linked": 48,
+    "at": "2026-05-31T13:01:59.311486+00:00"
+  },
+  "Fairy Tail::S03": {
+    "anidb_id": 6662,
+    "tvdb_id": 114801,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-06-08T06:33:36.344785+00:00"
+  },
+  "Fairy Tail::S04": {
+    "anidb_id": 6662,
+    "tvdb_id": 114801,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-31T13:31:19.475663+00:00"
+  },
+  "Naruto::S01": {
+    "anidb_id": 239,
+    "tvdb_id": 78857,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-05-31T15:01:01.682514+00:00"
+  },
+  "Kingdom (2012)::S01": {
+    "anidb_id": 8791,
+    "tvdb_id": 259635,
+    "source": "cron",
+    "linked": 19,
+    "at": "2026-05-31T16:33:15.364669+00:00"
+  },
+  "Black Clover::S01": {
+    "anidb_id": 12665,
+    "tvdb_id": 331753,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-31T17:30:52.169755+00:00"
+  },
+  "Kingdom (2012)::S02": {
+    "anidb_id": 9672,
+    "tvdb_id": 259635,
+    "source": "cron",
+    "linked": 10,
+    "at": "2026-05-31T18:06:33.499748+00:00"
+  },
+  "Hunter x Hunter (2011)::S01": {
+    "anidb_id": 8550,
+    "tvdb_id": 252322,
+    "source": "cron",
+    "linked": 58,
+    "at": "2026-05-31T18:05:52.918208+00:00"
+  },
+  "Hunter x Hunter (2011)::S02": {
+    "anidb_id": 8550,
+    "tvdb_id": 252322,
+    "source": "cron",
+    "linked": 77,
+    "at": "2026-05-31T18:05:52.919691+00:00"
+  },
+  "Hunter x Hunter (2011)::S03": {
+    "anidb_id": 8550,
+    "tvdb_id": 252322,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T21:02:16.852215+00:00"
+  },
+  "Naruto Shippuden::S08": {
+    "anidb_id": 4880,
+    "tvdb_id": 79824,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-31T18:07:17.423621+00:00"
+  },
+  "Sword Art Online::S01": {
+    "anidb_id": 8692,
+    "tvdb_id": 259640,
+    "source": "cron",
+    "linked": 25,
+    "at": "2026-05-31T18:09:49.285053+00:00"
+  },
+  "Sword Art Online::S03": {
+    "anidb_id": 13493,
+    "tvdb_id": 259640,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-05-31T21:31:51.092930+00:00"
+  },
+  "One Piece::S23": {
+    "anidb_id": 69,
+    "tvdb_id": 81797,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T16:02:55.220882+00:00"
+  },
+  "Haikyu!!::S01": {
+    "anidb_id": 10145,
+    "tvdb_id": 278157,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-06-09T13:33:06.577195+00:00"
+  },
+  "Kuroko's Basketball::S01": {
+    "anidb_id": 8681,
+    "tvdb_id": 257765,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T13:34:02.513968+00:00"
+  },
+  "Kuroko's Basketball::S02": {
+    "anidb_id": 9603,
+    "tvdb_id": 257765,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T13:34:02.518423+00:00"
+  },
+  "Fullmetal Alchemist - Brotherhood::S01": {
+    "anidb_id": 6107,
+    "tvdb_id": 85249,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-06-03T09:31:07.481481+00:00"
+  },
+  "To Your Eternity::S01": {
+    "anidb_id": 15351,
+    "tvdb_id": 375271,
+    "source": "cron",
+    "linked": 20,
+    "at": "2026-06-01T02:34:02.126746+00:00"
+  },
+  "Overlord::S02": {
+    "anidb_id": 12952,
+    "tvdb_id": 294002,
+    "source": "cron",
+    "linked": 13,
+    "at": "2026-06-01T04:31:58.930911+00:00"
+  },
+  "To Your Eternity::S02": {
+    "anidb_id": 16573,
+    "tvdb_id": 375271,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-03T16:03:45.847405+00:00"
+  },
+  "Overlord::S03": {
+    "anidb_id": 14008,
+    "tvdb_id": 294002,
+    "source": "cron",
+    "linked": 12,
+    "at": "2026-06-01T05:32:00.165206+00:00"
+  },
+  "Scissor Seven::S04": {
+    "anidb_id": 17852,
+    "tvdb_id": 358612,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-01T07:01:25.343661+00:00"
+  },
+  "Vinland Saga::S01": {
+    "anidb_id": 13945,
+    "tvdb_id": 359274,
+    "source": "cron",
+    "linked": 10,
+    "at": "2026-06-01T08:02:54.873962+00:00"
+  },
+  "High School D\u00d7D::S02": {
+    "anidb_id": 9409,
+    "tvdb_id": 254653,
+    "source": "cron",
+    "linked": 12,
+    "at": "2026-06-01T08:00:54.917103+00:00"
+  },
+  "Vinland Saga::S02": {
+    "anidb_id": 16426,
+    "tvdb_id": 359274,
+    "source": "cron",
+    "linked": 24,
+    "at": "2026-06-01T08:02:54.875431+00:00"
+  },
+  "Baki (2018)::S01": {
+    "anidb_id": 12569,
+    "tvdb_id": 348742,
+    "source": "cron",
+    "linked": 26,
+    "at": "2026-06-01T10:01:22.932687+00:00"
+  },
+  "Baki (2018)::S02": {
+    "anidb_id": 14772,
+    "tvdb_id": 348742,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-01T11:00:27.921954+00:00"
+  },
+  "Death Note::S01": {
+    "anidb_id": 4563,
+    "tvdb_id": 79481,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-06-01T11:00:38.127064+00:00"
+  },
+  "One-Punch Man::S01": {
+    "anidb_id": 11123,
+    "tvdb_id": 293088,
+    "source": "cron",
+    "linked": 11,
+    "at": "2026-06-01T11:02:06.785441+00:00"
+  },
+  "One-Punch Man::S03": {
+    "anidb_id": 17576,
+    "tvdb_id": 293088,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-03T23:02:19.866039+00:00"
+  },
+  "Kaguya-sama - Love Is War::S02": {
+    "anidb_id": 15207,
+    "tvdb_id": 354198,
+    "source": "cron",
+    "linked": 7,
+    "at": "2026-06-01T12:01:30.332893+00:00"
+  },
+  "The Eminence in Shadow::S01": {
+    "anidb_id": 16073,
+    "tvdb_id": 407520,
+    "source": "cron",
+    "linked": 20,
+    "at": "2026-06-01T11:34:54.516945+00:00"
+  },
+  "InuYasha::S02": {
+    "anidb_id": 144,
+    "tvdb_id": 71361,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-01T12:01:13.717532+00:00"
+  },
+  "DARLING in the FRANXX::S01": {
+    "anidb_id": 13259,
+    "tvdb_id": 337017,
+    "source": "cron",
+    "linked": 19,
+    "at": "2026-06-01T14:00:39.696028+00:00"
+  },
+  "Shangri-La Frontier::S01": {
+    "anidb_id": 17501,
+    "tvdb_id": 421855,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T22:07:27.047280+00:00"
+  },
+  "Your Lie in April::S01": {
+    "anidb_id": 10539,
+    "tvdb_id": 279830,
+    "source": "cron",
+    "linked": 19,
+    "at": "2026-06-01T20:32:53.274297+00:00"
+  },
+  "Dragon Ball DAIMA::S01": {
+    "anidb_id": 18238,
+    "tvdb_id": 440820,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-03T23:00:50.403302+00:00"
+  },
+  "Dragon Ball Super::S01": {
+    "anidb_id": 11210,
+    "tvdb_id": 295068,
+    "source": "cron",
+    "linked": 14,
+    "at": "2026-06-01T22:31:42.787733+00:00"
+  },
+  "Dragon Ball::S01": {
+    "anidb_id": 231,
+    "tvdb_id": 76666,
+    "source": "cron",
+    "linked": 13,
+    "at": "2026-06-01T23:02:05.892890+00:00"
+  },
+  "Hellsing::S01": {
+    "anidb_id": 32,
+    "tvdb_id": 71278,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-04T00:02:58.980461+00:00"
+  },
+  "WIND BREAKER::S01": {
+    "anidb_id": 17963,
+    "tvdb_id": 433088,
+    "source": "cron",
+    "linked": 13,
+    "at": "2026-06-01T23:33:17.433241+00:00"
+  },
+  "Paranoia Agent::S01": {
+    "anidb_id": 1265,
+    "tvdb_id": 75092,
+    "source": "cron",
+    "linked": 13,
+    "at": "2026-06-02T00:01:39.261093+00:00"
+  },
+  "Kabaneri of the Iron Fortress::S01": {
+    "anidb_id": 10951,
+    "tvdb_id": 305082,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T16:31:20.693272+00:00"
+  },
+  "The Summer Hikaru Died::S01": {
+    "anidb_id": 18649,
+    "tvdb_id": 450428,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-02T19:02:39.920864+00:00"
+  },
+  "Rent-a-Girlfriend::S01": {
+    "anidb_id": 15299,
+    "tvdb_id": 380654,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T23:05:27.704406+00:00"
+  },
+  "Terminator Zero::S01": {
+    "anidb_id": 18275,
+    "tvdb_id": 442145,
+    "source": "cron",
+    "linked": 8,
+    "at": "2026-06-02T20:32:23.651346+00:00"
+  },
+  "PLUTO::S01": {
+    "anidb_id": 13225,
+    "tvdb_id": 431093,
+    "source": "cron",
+    "linked": 8,
+    "at": "2026-06-02T21:03:18.162123+00:00"
+  },
+  "Tatsuki Fujimoto 17-26::S01": {
+    "anidb_id": 19557,
+    "tvdb_id": 467641,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-02T21:03:42.621943+00:00"
+  },
+  "Rin - Daughters of Mnemosyne::S01": {
+    "anidb_id": 5530,
+    "tvdb_id": 81365,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-04T00:06:13.038572+00:00"
+  },
+  "Takopi's Original Sin::S01": {
+    "anidb_id": 19038,
+    "tvdb_id": 457645,
+    "source": "cron",
+    "linked": 6,
+    "at": "2026-06-02T23:32:50.621664+00:00"
+  },
+  "Attack on Titan::S01": {
+    "anidb_id": 9541,
+    "tvdb_id": 267440,
+    "source": "cron",
+    "linked": 11,
+    "at": "2026-06-03T03:31:01.979229+00:00"
+  },
+  "Monster::S01": {
+    "anidb_id": 1539,
+    "tvdb_id": 74599,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-06-12T07:01:57.055977+00:00"
+  },
+  "Fire Force::S01": {
+    "anidb_id": 14488,
+    "tvdb_id": 355480,
+    "source": "cron",
+    "linked": 19,
+    "at": "2026-06-03T07:01:15.796253+00:00"
+  },
+  "Black Butler::S01": {
+    "anidb_id": 6048,
+    "tvdb_id": 83996,
+    "source": "cron",
+    "linked": 9,
+    "at": "2026-06-03T08:01:48.070074+00:00"
+  },
+  "Black Butler::S02": {
+    "anidb_id": 7369,
+    "tvdb_id": 83996,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-03T08:01:48.072943+00:00"
+  },
+  "Black Butler::S03": {
+    "anidb_id": 10402,
+    "tvdb_id": 83996,
+    "source": "cron",
+    "linked": 10,
+    "at": "2026-06-03T08:01:48.075532+00:00"
+  },
+  "Black Butler::S04": {
+    "anidb_id": 18100,
+    "tvdb_id": 83996,
+    "source": "cron",
+    "linked": 11,
+    "at": "2026-06-03T08:31:16.821195+00:00"
+  },
+  "Yu Yu Hakusho::S02": {
+    "anidb_id": 312,
+    "tvdb_id": 76665,
+    "source": "cron",
+    "linked": 7,
+    "at": "2026-06-07T01:34:37.806190+00:00"
+  },
+  "Clannad::S01": {
+    "anidb_id": 5101,
+    "tvdb_id": 80644,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T07:30:56.083215+00:00"
+  },
+  "Clannad::S02": {
+    "anidb_id": 5841,
+    "tvdb_id": 80644,
+    "source": "cron",
+    "linked": 14,
+    "at": "2026-06-03T11:30:41.931072+00:00"
+  },
+  "Legend of the Galactic Heroes::S03": {
+    "anidb_id": 584,
+    "tvdb_id": 81618,
+    "source": "cron",
+    "linked": 26,
+    "at": "2026-06-03T12:32:16.390766+00:00"
+  },
+  "Record of Ragnarok::S01": {
+    "anidb_id": 15932,
+    "tvdb_id": 393810,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-06-04T00:06:03.210019+00:00"
+  },
+  "Record of Ragnarok::S02": {
+    "anidb_id": 16540,
+    "tvdb_id": 393810,
+    "source": "cron",
+    "linked": 15,
+    "at": "2026-06-03T13:03:35.601253+00:00"
+  },
+  "Record of Ragnarok::S03": {
+    "anidb_id": 19212,
+    "tvdb_id": 393810,
+    "source": "cron",
+    "linked": 15,
+    "at": "2026-06-03T13:03:35.602499+00:00"
+  },
+  "Kimi ni Todoke - From Me to You::S01": {
+    "anidb_id": 6466,
+    "tvdb_id": 117801,
+    "source": "cron",
+    "linked": 24,
+    "at": "2026-06-03T14:02:14.070550+00:00"
+  },
+  "Kimi ni Todoke - From Me to You::S03": {
+    "anidb_id": 18179,
+    "tvdb_id": 117801,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-03T14:31:14.118517+00:00"
+  },
+  "Bleach::S01": {
+    "anidb_id": 2369,
+    "tvdb_id": 74796,
+    "source": "cron",
+    "linked": 18,
+    "at": "2026-06-03T15:31:47.129861+00:00"
+  },
+  "Bleach::S02": {
+    "anidb_id": 2369,
+    "tvdb_id": 74796,
+    "source": "cron",
+    "linked": 21,
+    "at": "2026-06-03T15:31:47.136389+00:00"
+  },
+  "Dr. STONE::S01": {
+    "anidb_id": 14491,
+    "tvdb_id": 355774,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-03T16:01:20.603957+00:00"
+  },
+  "To Your Eternity::S03": {
+    "anidb_id": 17904,
+    "tvdb_id": 375271,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-06-03T23:03:04.233093+00:00"
+  },
+  "Rascal Does Not Dream of Bunny Girl Senpai::S01": {
+    "anidb_id": 13900,
+    "tvdb_id": 345596,
+    "source": "cron",
+    "linked": 13,
+    "at": "2026-06-03T20:02:42.969293+00:00"
+  },
+  "Samurai Champloo::S01": {
+    "anidb_id": 1543,
+    "tvdb_id": 79089,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-06-03T20:36:09.062380+00:00"
+  },
+  "Call of the Night::S01": {
+    "anidb_id": 16971,
+    "tvdb_id": 412374,
+    "source": "cron",
+    "linked": 13,
+    "at": "2026-06-03T20:32:30.783452+00:00"
+  },
+  "Rascal Does Not Dream of Bunny Girl Senpai::S02": {
+    "anidb_id": 18300,
+    "tvdb_id": 345596,
+    "source": "cron",
+    "linked": 13,
+    "at": "2026-06-03T20:35:49.499901+00:00"
+  },
+  "Blue Box::S01": {
+    "anidb_id": 18278,
+    "tvdb_id": 429934,
+    "source": "cron",
+    "linked": 23,
+    "at": "2026-06-04T00:01:01.807173+00:00"
+  },
+  "Made in Abyss::S01": {
+    "anidb_id": 12681,
+    "tvdb_id": 326109,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T13:02:07.356168+00:00"
+  },
+  "Tokyo Revengers::S01": {
+    "anidb_id": 15601,
+    "tvdb_id": 393478,
+    "source": "cron",
+    "linked": 13,
+    "at": "2026-06-03T22:03:21.643319+00:00"
+  },
+  "Dororo (2019)::S01": {
+    "anidb_id": 13946,
+    "tvdb_id": 354167,
+    "source": "cron",
+    "linked": 24,
+    "at": "2026-06-04T00:02:29.405266+00:00"
+  },
+  "Is It Wrong to Try to Pick Up Girls in a Dungeon!::S01": {
+    "anidb_id": 10894,
+    "tvdb_id": 289882,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-06-04T00:03:12.678430+00:00"
+  },
+  "Parasyte -the maxim-::S01": {
+    "anidb_id": 10272,
+    "tvdb_id": 279831,
+    "source": "cron",
+    "linked": 24,
+    "at": "2026-06-04T00:05:49.642795+00:00"
+  },
+  "Ranking of Kings::S01": {
+    "anidb_id": 15298,
+    "tvdb_id": 391625,
+    "source": "cron",
+    "linked": 23,
+    "at": "2026-06-04T00:33:57.280686+00:00"
+  },
+  "Welcome to the N.H.K::S01": {
+    "anidb_id": 4121,
+    "tvdb_id": 79415,
+    "source": "cron",
+    "linked": 13,
+    "at": "2026-06-04T01:02:18.678439+00:00"
+  },
+  "Kakegurui::S01": {
+    "anidb_id": 12834,
+    "tvdb_id": 327572,
+    "source": "cron",
+    "linked": 11,
+    "at": "2026-06-04T02:01:14.857486+00:00"
+  },
+  "Horimiya::S01": {
+    "anidb_id": 15733,
+    "tvdb_id": 388593,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-05T14:31:19.789004+00:00"
+  },
+  "Fruits Basket (2019)::S02": {
+    "anidb_id": 14988,
+    "tvdb_id": 357488,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-06T18:32:13.218184+00:00"
+  },
+  "Fruits Basket (2019)::S01": {
+    "anidb_id": 14490,
+    "tvdb_id": 357488,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-05T16:02:11.749595+00:00"
+  },
+  "One Piece::S21": {
+    "anidb_id": 69,
+    "tvdb_id": 81797,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-06T17:35:30.418682+00:00"
+  },
+  "One Piece::S22": {
+    "anidb_id": 69,
+    "tvdb_id": 81797,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-06-06T17:35:30.422286+00:00"
+  },
+  "The Dangers in My Heart::S01": {
+    "anidb_id": 17547,
+    "tvdb_id": 422981,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T17:32:45.715229+00:00"
+  },
+  "An Observation Log of My Fianc\u00e9e Who Calls Herself a Villainess::S01": {
+    "anidb_id": 19328,
+    "tvdb_id": 463583,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-06T18:30:52.855892+00:00"
+  },
+  "Fist of the North Star - HOKUTO NO KEN::S01": {
+    "anidb_id": 18190,
+    "tvdb_id": 465216,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-06-10T00:01:16.661308+00:00"
+  },
+  "Golden Kamuy::S01": {
+    "anidb_id": 13337,
+    "tvdb_id": 338455,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T12:32:05.605680+00:00"
+  },
+  "Golden Kamuy::S02": {
+    "anidb_id": 14185,
+    "tvdb_id": 338455,
+    "source": "cron",
+    "linked": 12,
+    "at": "2026-06-06T19:32:41.015415+00:00"
+  },
+  "The Daily Life of the Immortal King::S01": {
+    "anidb_id": 14718,
+    "tvdb_id": 376751,
+    "source": "cron",
+    "linked": 7,
+    "at": "2026-06-10T00:36:24.690638+00:00"
+  },
+  "The Daily Life of the Immortal King::S02": {
+    "anidb_id": 16359,
+    "tvdb_id": 376751,
+    "source": "cron",
+    "linked": 7,
+    "at": "2026-06-10T00:05:21.715485+00:00"
+  },
+  "Witch Hat Atelier::S01": {
+    "anidb_id": 17305,
+    "tvdb_id": 418666,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-10T16:35:39.780183+00:00"
+  },
+  "Mistress Kanan Is Devilishly Easy::S01": {
+    "anidb_id": 19293,
+    "tvdb_id": 462598,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T13:02:17.699921+00:00"
+  },
+  "Psycho-Pass::S01": {
+    "anidb_id": 9127,
+    "tvdb_id": 262090,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T01:33:43.251793+00:00"
+  },
+  "Golden Kamuy::S05": {
+    "anidb_id": 18081,
+    "tvdb_id": 338455,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T02:31:16.356715+00:00"
+  },
+  "Frieren - Beyond Journey's End::S02": {
+    "anidb_id": 18886,
+    "tvdb_id": 424536,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-06-09T20:35:30.443236+00:00"
+  },
+  "Grand Blue Dreaming::S02": {
+    "anidb_id": 18892,
+    "tvdb_id": 343913,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-06-10T01:07:51.791873+00:00"
+  },
+  "Gachiakuta::S01": {
+    "anidb_id": 18686,
+    "tvdb_id": 450537,
+    "source": "cron",
+    "linked": 14,
+    "at": "2026-06-10T01:06:58.978526+00:00"
+  },
+  "Welcome to Demon School! Iruma-kun::S01": {
+    "anidb_id": 14660,
+    "tvdb_id": 369144,
+    "source": "cron",
+    "linked": 6,
+    "at": "2026-06-08T17:35:27.765119+00:00"
+  },
+  "Golden Kamuy::S04": {
+    "anidb_id": 17023,
+    "tvdb_id": 338455,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-06-10T02:02:57.916049+00:00"
+  },
+  "Welcome to Demon School! Iruma-kun::S02": {
+    "anidb_id": 15428,
+    "tvdb_id": 369144,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-06-08T19:03:24.620708+00:00"
+  },
+  "Yu Yu Hakusho::S03": {
+    "anidb_id": 312,
+    "tvdb_id": 76665,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T12:36:22.618163+00:00"
+  },
+  "Yu Yu Hakusho::S04": {
+    "anidb_id": 312,
+    "tvdb_id": 76665,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T02:33:31.920700+00:00"
+  },
+  "Alya Sometimes Hides Her Feelings in Russian::S01": {
+    "anidb_id": 17914,
+    "tvdb_id": 432531,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T03:30:36.603467+00:00"
+  },
+  "Call of the Night::S02": {
+    "anidb_id": 18531,
+    "tvdb_id": 412374,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-06-07T03:31:07.011898+00:00"
+  },
+  "Interspecies Reviewers::S01": {
+    "anidb_id": 14969,
+    "tvdb_id": 371662,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-06-07T13:01:44.868982+00:00"
+  },
+  "Puella Magi Madoka Magica::S01": {
+    "anidb_id": 8069,
+    "tvdb_id": 219181,
+    "source": "cron",
+    "linked": 12,
+    "at": "2026-06-07T04:04:46.875238+00:00"
+  },
+  "Redo of Healer::S01": {
+    "anidb_id": 15277,
+    "tvdb_id": 388575,
+    "source": "cron",
+    "linked": 12,
+    "at": "2026-06-07T04:06:49.205670+00:00"
+  },
+  "You and I Are Polar Opposites::S01": {
+    "anidb_id": 19010,
+    "tvdb_id": 457078,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-06-07T10:02:52.536835+00:00"
+  },
+  "91 Days::S01": {
+    "anidb_id": 12014,
+    "tvdb_id": 309530,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-06-09T23:31:02.468794+00:00"
+  },
+  "High School of the Dead::S01": {
+    "anidb_id": 7382,
+    "tvdb_id": 171591,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T13:31:05.512285+00:00"
+  },
+  "Zom 100 - Bucket List of the Dead::S01": {
+    "anidb_id": 17806,
+    "tvdb_id": 429310,
+    "source": "cron",
+    "linked": 12,
+    "at": "2026-06-07T05:04:42.410838+00:00"
+  },
+  "MASHLE - MAGIC AND MUSCLES::S01": {
+    "anidb_id": 17478,
+    "tvdb_id": 421737,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T12:33:47.008728+00:00"
+  },
+  "Clevatess::S01": {
+    "anidb_id": 18730,
+    "tvdb_id": 451793,
+    "source": "cron",
+    "linked": 12,
+    "at": "2026-06-07T06:02:00.331461+00:00"
+  },
+  "Ping Pong The Animation::S01": {
+    "anidb_id": 10400,
+    "tvdb_id": 277464,
+    "source": "cron",
+    "linked": 10,
+    "at": "2026-06-07T06:33:08.173834+00:00"
+  },
+  "Terror in Resonance::S01": {
+    "anidb_id": 10537,
+    "tvdb_id": 279986,
+    "source": "cron",
+    "linked": 11,
+    "at": "2026-06-07T06:34:18.073241+00:00"
+  },
+  "Afro Samurai::S01": {
+    "anidb_id": 2656,
+    "tvdb_id": 79755,
+    "source": "cron",
+    "linked": 5,
+    "at": "2026-06-07T09:02:13.929845+00:00"
+  },
+  "The Daily Life of the Immortal King::S04": {
+    "anidb_id": 18217,
+    "tvdb_id": 376751,
+    "source": "cron",
+    "linked": 12,
+    "at": "2026-06-07T12:35:54.214549+00:00"
+  },
+  "The Daily Life of the Immortal King::S05": {
+    "anidb_id": 19691,
+    "tvdb_id": 376751,
+    "source": "cron",
+    "linked": 6,
+    "at": "2026-06-10T00:36:24.696541+00:00"
+  },
+  "DAN DA DAN::S01": {
+    "anidb_id": 18290,
+    "tvdb_id": 432832,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-07T16:00:39.828248+00:00"
+  },
+  "Gintama::S01": {
+    "anidb_id": 3468,
+    "tvdb_id": 79895,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-09T23:34:06.889681+00:00"
+  },
+  "Gintama::S02": {
+    "anidb_id": 3468,
+    "tvdb_id": 79895,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-08T07:36:03.839322+00:00"
+  },
+  "Gintama::S03": {
+    "anidb_id": 3468,
+    "tvdb_id": 79895,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-06-07T21:02:26.188986+00:00"
+  },
+  "Gintama::S04": {
+    "anidb_id": 3468,
+    "tvdb_id": 79895,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-08T03:34:02.301376+00:00"
+  },
+  "Gintama::S05": {
+    "anidb_id": 8126,
+    "tvdb_id": 79895,
+    "source": "cron",
+    "linked": 11,
+    "at": "2026-06-10T00:02:50.864659+00:00"
+  },
+  "Gintama::S06": {
+    "anidb_id": 9427,
+    "tvdb_id": 79895,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-06-09T23:34:06.893058+00:00"
+  },
+  "Dragon Ball Z::S01": {
+    "anidb_id": 1530,
+    "tvdb_id": 81472,
+    "source": "cron",
+    "linked": 12,
+    "at": "2026-06-08T04:03:40.310769+00:00"
+  },
+  "Dragon Ball Z::S04": {
+    "anidb_id": 1530,
+    "tvdb_id": 81472,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-08T16:01:15.283498+00:00"
+  },
+  "Dragon Ball Z::S05": {
+    "anidb_id": 1530,
+    "tvdb_id": 81472,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-10T02:01:43.939571+00:00"
+  },
+  "Fairy Tail::S02": {
+    "anidb_id": 6662,
+    "tvdb_id": 114801,
+    "source": "cron",
+    "linked": 22,
+    "at": "2026-06-08T07:34:54.862355+00:00"
+  },
+  "Dragon Ball Z::S03": {
+    "anidb_id": 1530,
+    "tvdb_id": 81472,
+    "source": "cron",
+    "linked": 8,
+    "at": "2026-06-08T05:33:06.179316+00:00"
+  },
+  "Dragon Ball Z::S06": {
+    "anidb_id": 1530,
+    "tvdb_id": 81472,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-06-08T06:31:55.177860+00:00"
+  },
+  "Dragon Ball Z::S02": {
+    "anidb_id": 1530,
+    "tvdb_id": 81472,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-06-08T08:31:47.412162+00:00"
+  },
+  "Gintama::S07": {
+    "anidb_id": 10993,
+    "tvdb_id": 79895,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-06-08T11:08:02.975136+00:00"
+  },
+  "Gintama::S08": {
+    "anidb_id": 12419,
+    "tvdb_id": 79895,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-06-08T11:08:02.978653+00:00"
+  },
+  "Sailor Moon::S01": {
+    "anidb_id": 235,
+    "tvdb_id": 78500,
+    "source": "cron",
+    "linked": 40,
+    "at": "2026-06-08T09:44:54.492991+00:00"
+  },
+  "Fighting Spirit::S01": {
+    "anidb_id": 129,
+    "tvdb_id": 79685,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-08T12:33:58.685761+00:00"
+  },
+  "Tomorrow's Joe::S01": {
+    "anidb_id": 1457,
+    "tvdb_id": 81232,
+    "source": "cron",
+    "linked": 11,
+    "at": "2026-06-08T17:04:22.944311+00:00"
+  },
+  "Tomorrow's Joe::S02": {
+    "anidb_id": 1458,
+    "tvdb_id": 81232,
+    "source": "cron",
+    "linked": 6,
+    "at": "2026-06-12T07:03:05.535195+00:00"
+  },
+  "Fighting Spirit::S03": {
+    "anidb_id": 9982,
+    "tvdb_id": 79685,
+    "source": "cron",
+    "linked": 5,
+    "at": "2026-06-08T13:01:55.677883+00:00"
+  },
+  "The Seven Deadly Sins::S02": {
+    "anidb_id": 11646,
+    "tvdb_id": 284131,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-08T16:45:16.582865+00:00"
+  },
+  "The Seven Deadly Sins::S03": {
+    "anidb_id": 14819,
+    "tvdb_id": 284131,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-06-08T16:45:16.587199+00:00"
+  },
+  "Saint Seiya::S01": {
+    "anidb_id": 826,
+    "tvdb_id": 72775,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-10T00:04:12.846284+00:00"
+  },
+  "That Time I Got Reincarnated as a Slime::S01": {
+    "anidb_id": 13871,
+    "tvdb_id": 352408,
+    "source": "cron",
+    "linked": 7,
+    "at": "2026-06-08T18:03:43.062343+00:00"
+  },
+  "Kuroko's Basketball::S03": {
+    "anidb_id": 10662,
+    "tvdb_id": 257765,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-11T12:03:22.609999+00:00"
+  },
+  "Love Through a Prism::S01": {
+    "anidb_id": 19743,
+    "tvdb_id": 470980,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-06-09T23:04:27.881486+00:00"
+  },
+  "Haikyu!!::S03": {
+    "anidb_id": 11991,
+    "tvdb_id": 278157,
+    "source": "cron",
+    "linked": 10,
+    "at": "2026-06-09T13:33:06.580966+00:00"
+  },
+  "The Apothecary Diaries::S02": {
+    "anidb_id": 18562,
+    "tvdb_id": 431162,
+    "source": "cron",
+    "linked": 5,
+    "at": "2026-06-09T20:05:29.706828+00:00"
+  },
+  "Psycho-Pass::S02": {
+    "anidb_id": 10065,
+    "tvdb_id": 262090,
+    "source": "cron",
+    "linked": 10,
+    "at": "2026-06-09T21:15:49.910050+00:00"
+  },
+  "Psycho-Pass::S03": {
+    "anidb_id": 14735,
+    "tvdb_id": 262090,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-06-09T21:15:49.919942+00:00"
+  },
+  "Kakegurui::S02": {
+    "anidb_id": 13718,
+    "tvdb_id": 327572,
+    "source": "cron",
+    "linked": 12,
+    "at": "2026-06-09T22:05:56.366585+00:00"
+  },
+  "Food Wars!::S01": {
+    "anidb_id": 10901,
+    "tvdb_id": 289909,
+    "source": "cron",
+    "linked": 8,
+    "at": "2026-06-09T23:03:48.543592+00:00"
+  },
+  "Food Wars!::S05": {
+    "anidb_id": 15319,
+    "tvdb_id": 289909,
+    "source": "cron",
+    "linked": 5,
+    "at": "2026-06-09T23:32:55.723738+00:00"
+  },
+  "My Teen Romantic Comedy SNAFU::S03": {
+    "anidb_id": 9310,
+    "tvdb_id": 267435,
+    "source": "cron",
+    "linked": 8,
+    "at": "2026-06-10T05:33:33.293637+00:00"
+  },
+  "Hellsing Ultimate::S01": {
+    "anidb_id": 3296,
+    "tvdb_id": 263688,
+    "source": "cron",
+    "linked": 10,
+    "at": "2026-06-10T11:32:06.065608+00:00"
+  },
+  "Kaiju No. 8::S01": {
+    "anidb_id": 17550,
+    "tvdb_id": 423075,
+    "source": "cron",
+    "linked": 10,
+    "at": "2026-06-10T12:33:04.737713+00:00"
+  },
+  "BLUE LOCK::S01": {
+    "anidb_id": 16519,
+    "tvdb_id": 408629,
+    "source": "cron",
+    "linked": 24,
+    "at": "2026-06-10T23:01:31.041586+00:00"
+  },
+  "Cyberpunk - Edgerunners::S01": {
+    "anidb_id": 15610,
+    "tvdb_id": 384541,
+    "source": "cron",
+    "linked": 10,
+    "at": "2026-06-10T23:02:01.240674+00:00"
+  },
+  "Devilman Crybaby::S01": {
+    "anidb_id": 12986,
+    "tvdb_id": 338192,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-10T23:02:26.397851+00:00"
+  },
+  "Elfen Lied::S01": {
+    "anidb_id": 1544,
+    "tvdb_id": 75941,
+    "source": "cron",
+    "linked": 9,
+    "at": "2026-06-10T23:02:51.583304+00:00"
+  },
+  "Grand Blue Dreaming::S01": {
+    "anidb_id": 13734,
+    "tvdb_id": 343913,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-10T23:03:02.834175+00:00"
+  },
+  "Heaven Official's Blessing::S02": {
+    "anidb_id": 18218,
+    "tvdb_id": 388672,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-10T23:03:19.442664+00:00"
+  },
+  "Komi Can't Communicate::S01": {
+    "anidb_id": 16300,
+    "tvdb_id": 402412,
+    "source": "cron",
+    "linked": 3,
+    "at": "2026-06-10T23:03:40.504518+00:00"
+  },
+  "Made in Abyss::S02": {
+    "anidb_id": 15359,
+    "tvdb_id": 326109,
+    "source": "cron",
+    "linked": 9,
+    "at": "2026-06-10T23:03:53.446627+00:00"
+  },
+  "Mob Psycho 100::S02": {
+    "anidb_id": 13939,
+    "tvdb_id": 307375,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-10T23:04:11.483163+00:00"
+  },
+  "The Seven Deadly Sins::S04": {
+    "anidb_id": 15459,
+    "tvdb_id": 284131,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-06-10T23:06:46.662706+00:00"
+  },
+  "Tower of God::S01": {
+    "anidb_id": 15391,
+    "tvdb_id": 376729,
+    "source": "cron",
+    "linked": 13,
+    "at": "2026-06-10T23:07:59.197031+00:00"
+  },
+  "Tower of God::S02": {
+    "anidb_id": 17559,
+    "tvdb_id": 376729,
+    "source": "cron",
+    "linked": 25,
+    "at": "2026-06-10T23:07:59.201368+00:00"
+  },
+  "Naruto::S02": {
+    "anidb_id": 239,
+    "tvdb_id": 78857,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-11T03:03:15.873324+00:00"
+  },
+  "Naruto::S03": {
+    "anidb_id": 239,
+    "tvdb_id": 78857,
+    "source": "cron",
+    "linked": 48,
+    "at": "2026-06-11T04:32:47.187663+00:00"
+  },
+  "Dragon Ball Z::S07": {
+    "anidb_id": 1530,
+    "tvdb_id": 81472,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-06-11T14:31:18.094052+00:00"
+  },
+  "Dragon Ball Z::S08": {
+    "anidb_id": 1530,
+    "tvdb_id": 81472,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-06-11T14:31:18.096927+00:00"
+  },
+  "Dragon Ball Z::S09": {
+    "anidb_id": 1530,
+    "tvdb_id": 81472,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-06-11T09:01:31.515206+00:00"
+  },
+  "Soul Eater::S01": {
+    "anidb_id": 5610,
+    "tvdb_id": 81751,
+    "source": "cron",
+    "linked": 11,
+    "at": "2026-06-11T16:35:12.163456+00:00"
+  },
+  "Assassination Classroom::S01": {
+    "anidb_id": 10702,
+    "tvdb_id": 283947,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-06-11T18:00:37.278357+00:00"
+  },
+  "Naruto::S04": {
+    "anidb_id": 239,
+    "tvdb_id": 78857,
+    "source": "cron",
+    "linked": 2,
+    "at": "2026-06-11T14:34:06.167892+00:00"
+  },
+  "Mob Psycho 100::S01": {
+    "anidb_id": 11803,
+    "tvdb_id": 307375,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-11T14:32:54.787480+00:00"
+  },
+  "Fighting Spirit::S02": {
+    "anidb_id": 6153,
+    "tvdb_id": 79685,
+    "source": "cron",
+    "linked": 1,
+    "at": "2026-06-11T18:31:03.635943+00:00"
+  },
+  "Detective Conan::S01": {
+    "anidb_id": 266,
+    "tvdb_id": 72454,
+    "source": "cron",
+    "linked": 4,
+    "at": "2026-06-12T00:30:58.060654+00:00"
+  },
+  "Fire Force::S02": {
+    "anidb_id": 15335,
+    "tvdb_id": 355480,
+    "source": "cron",
+    "linked": 22,
+    "at": "2026-06-12T00:32:21.890979+00:00"
+  },
+  "Ghost in the Shell - Stand Alone Complex::S01": {
+    "anidb_id": 247,
+    "tvdb_id": 73749,
+    "source": "cron",
+    "linked": 22,
+    "at": "2026-06-12T00:36:09.430840+00:00"
+  },
+  "Ghost in the Shell - Stand Alone Complex::S02": {
+    "anidb_id": 1176,
+    "tvdb_id": 73749,
+    "source": "cron",
+    "linked": 25,
+    "at": "2026-06-12T00:36:09.434180+00:00"
+  },
+  "Gurren Lagann::S01": {
+    "anidb_id": 4575,
+    "tvdb_id": 80096,
+    "source": "cron",
+    "linked": 10,
+    "at": "2026-06-12T00:36:31.265359+00:00"
+  },
+  "Hell's Paradise::S01": {
+    "anidb_id": 16012,
+    "tvdb_id": 402474,
+    "source": "cron",
+    "linked": 13,
+    "at": "2026-06-12T00:37:50.754458+00:00"
+  },
+  "Nukitashi THE ANIMATION::S01": {
+    "anidb_id": 18459,
+    "tvdb_id": 445390,
+    "source": "cron",
+    "linked": 11,
+    "at": "2026-06-12T00:39:30.114757+00:00"
+  },
+  "Orb - On the Movements of the Earth::S01": {
+    "anidb_id": 17480,
+    "tvdb_id": 421583,
+    "source": "cron",
+    "linked": 25,
+    "at": "2026-06-12T00:40:51.242370+00:00"
+  },
+  "Prison School::S01": {
+    "anidb_id": 10768,
+    "tvdb_id": 293267,
+    "source": "cron",
+    "linked": 12,
+    "at": "2026-06-12T00:41:49.982729+00:00"
+  },
+  "Serial Experiments Lain::S01": {
+    "anidb_id": 99,
+    "tvdb_id": 78814,
+    "source": "cron",
+    "linked": 13,
+    "at": "2026-06-12T00:43:03.054500+00:00"
+  },
+  "The Fragrant Flower Blooms with Dignity::S01": {
+    "anidb_id": 18867,
+    "tvdb_id": 454524,
+    "source": "cron",
+    "linked": 13,
+    "at": "2026-06-12T00:44:21.617802+00:00"
+  }
+}
