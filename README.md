@@ -106,7 +106,7 @@ The `shoko-autolink/` directory contains the complete pipeline for bridging Sona
 - **`dedup_episodes.py`**: Cleans up duplicate episodes from Sonarr.
 - **`sanitize_library.py`**: Cleans up unwanted files and metadata from the library.
 - **`sanitize_movies.py`**: Fixes Radarr/Jellyfin movies stuck with NzbDAV hash filenames.
-- **`library_stream_health.py`**: Periodically checks the health of media files to ensure they stream correctly.
+- **`library_stream_health.py`**: The dead-link detector. Periodically walks the library to test the health of the underlying Usenet FUSE symlinks. If a stream is dead/unplayable, it deletes the broken link, strips the file record from Sonarr/Radarr, and automatically queues a search to re-grab a healthy release.
 
 ### Infrastructure
 - **`update_cloudflare_dns.py`**: Dynamic DNS updater for Cloudflare to keep the server remotely accessible.
