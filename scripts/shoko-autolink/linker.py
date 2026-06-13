@@ -69,7 +69,9 @@ class Linker:
             print("Notice: Shoko reports an active AniDB HTTP ban. Enforcing ban_active=True.", file=sys.stderr)
             self.ban_active = True
         elif self.ban_active and not live_ban:
-            print("Notice: Config has ban_active=True, but Shoko reports no ban. You may want to disable it in config.", file=sys.stderr)
+            print("Notice: Config has ban_active=True, but Shoko reports no ban. Automatically lifting ban flag in config.", file=sys.stderr)
+            self.ban_active = False
+            self._update_config_ban_flag(False)
             
         files = self.shoko.list_unrecognized_files()
         grouped = self._group_files(files, series_filter)
@@ -441,3 +443,23 @@ class Linker:
     def clear_review_log(self) -> None:
         if self.review.path.exists():
             self.review.path.write_text("")
+
+    def _update_config_ban_flag(self, value: bool) -> None:
+        path_str = self.cfg.get("_config_path")
+        if not path_str:
+            return
+        path = Path(path_str)
+        if not path.exists():
+            return
+        try:
+            with open(path, "r") as f:
+                content = f.read()
+            import re
+            if re.search(r"anidb_ban_active:\s*(true|false|True|False)", content):
+                new_content = re.sub(r"(anidb_ban_active:\s*)(true|false|True|False)", r"\g<1>" + ("true" if value else "false"), content)
+            else:
+                return # Don't try to append blindly
+            with open(path, "w") as f:
+                f.write(new_content)
+        except Exception as e:
+            print(f"Warning: Failed to update ban flag in config: {e}", file=sys.stderr)

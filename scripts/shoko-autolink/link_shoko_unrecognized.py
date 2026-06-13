@@ -33,7 +33,9 @@ def acquire_lock(lock_path: Path) -> int | None:
 
 
 def cmd_run(args: argparse.Namespace) -> int:
-    cfg = load_config(getattr(args, "config", None))
+    config_path = getattr(args, "config", None)
+    cfg = load_config(config_path)
+    cfg["_config_path"] = config_path or os.environ.get("SHOKO_AUTOLINK_CONFIG", "/opt/shoko-autolink/config.yaml")
     if args.dry_run:
         cfg.setdefault("behavior", {})["dry_run"] = True
     lock_file = Path(cfg.get("behavior", {}).get("lock_file", "/opt/shoko-autolink/state/.lock"))
