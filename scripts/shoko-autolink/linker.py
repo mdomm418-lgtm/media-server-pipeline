@@ -134,11 +134,14 @@ class Linker:
             return self._anidb_cache.shoko_series[anidb_id], self._anidb_cache.ep_maps[anidb_id]
 
         if not self.dry_run and anidb_id not in self._anidb_cache.refreshed:
-            self.shoko.refresh_anidb_series(
-                anidb_id,
-                float(self.behavior.get("anidb_refresh_delay_sec", 8)),
-                ban_active=self.ban_active,
-            )
+            try:
+                self.shoko.refresh_anidb_series(
+                    anidb_id,
+                    float(self.behavior.get("anidb_refresh_delay_sec", 8)),
+                    ban_active=self.ban_active,
+                )
+            except Exception as e:
+                print(f"Warning: Failed to refresh AniDB series {anidb_id}: {e}", file=sys.stderr)
             self._anidb_cache.refreshed.add(anidb_id)
 
         shoko_series_id = self.shoko.get_shoko_series_id(anidb_id)
