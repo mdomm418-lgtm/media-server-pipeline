@@ -147,7 +147,11 @@ class Linker:
         shoko_series_id = self.shoko.get_shoko_series_id(anidb_id)
         if not shoko_series_id:
             return None, None
-        ep_map = self.shoko.get_episode_map(shoko_series_id)
+        try:
+            ep_map = self.shoko.get_episode_map(shoko_series_id)
+        except Exception as e:
+            print(f"Warning: Failed to get episode map for Shoko series {shoko_series_id} (AniDB {anidb_id}): {e}", file=sys.stderr)
+            return shoko_series_id, None
         self._anidb_cache.shoko_series[anidb_id] = shoko_series_id
         self._anidb_cache.ep_maps[anidb_id] = ep_map
         return shoko_series_id, ep_map
