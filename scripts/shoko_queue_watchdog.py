@@ -68,10 +68,16 @@ def main() -> int:
             start_time = parse_iso_time(item["StartTime"])
             age_sec = (now - start_time).total_seconds()
 
-            # If a single task has been running for more than 45 minutes, the thread is hung.
-            if age_sec > 45 * 60:
-                title = item.get("Title", "Unknown")
-                print(f"Watchdog triggered: Task '{title}' running for {age_sec/60:.1f} minutes. Restarting Shoko container...")
+            # If an AniDB UDP task hangs, it freezes forever.
+            # Hash File tasks can legitimately take 1-2 hours on a network mount.
+            task_type = item.get("Type", "")
+            title = item.get("Title", "Unknown")
+            
+            is_anidb = "anidb" in task_type.lower() or "anidb" in title.lower()
+            timeout_sec = 45 * 60 if is_anidb else 4 * 60 * 60
+
+            if age_sec > timeout_sec:
+                print(f"Watchdog triggered: Task '{title}' ({task_type}) running for {age_sec/60:.1f} minutes. Restarting Shoko container...")
                 subprocess.run(["docker", "restart", "shoko_server"], check=True)
                 return 0
 
