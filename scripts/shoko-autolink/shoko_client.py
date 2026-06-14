@@ -124,8 +124,8 @@ class ShokoClient:
         r = self._session.post(
             f"{self.base_url}/api/v3/Series/AniDB/{anidb_id}/Refresh",
             headers=self._headers(),
-            params={"createSeriesEntry": "true", "immediate": "false"},
-            timeout=10,
+            params={"createSeriesEntry": "true", "immediate": "true"},
+            timeout=120,
         )
         r.raise_for_status()
         if delay_sec > 0:
