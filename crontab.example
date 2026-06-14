@@ -21,3 +21,6 @@
 
 # Dynamic DNS
 */10 * * * * /usr/bin/python3 /opt/plex-stack/scripts/update_cloudflare_dns.py >> /opt/plex-stack/scripts/cloudflare-ddns.log 2>&1
+
+# Shoko Autolink Watchdog (runs every 15 minutes to unstuck the AniDB queue)
+*/15 * * * * /home/admin/shoko-autolink/venv/bin/python /home/admin/shoko_queue_watchdog.py >> /home/admin/shoko-watchdog.log 2>&1
