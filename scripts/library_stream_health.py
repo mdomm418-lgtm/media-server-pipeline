@@ -178,6 +178,21 @@ def load_nzbdav_unhealthy() -> dict[str, str]:
     return out
 
 
+def check_docker_logs() -> set[str]:
+    """Parse docker logs to find files that threw errors during actual playback."""
+    broken_paths = set()
+    try:
+        proc = subprocess.run(["docker", "logs", "--since", "24h", "nzbdav"], capture_output=True, text=True)
+        for line in proc.stderr.splitlines() + proc.stdout.splitlines():
+            if "has missing articles" in line or "Timeout reading from NNTP stream" in line or "Response Content-Length mismatch" in line:
+                m = re.search(r"File `([^`]+)`", line)
+                if m:
+                    broken_paths.add(container_to_host(m.group(1)))
+    except Exception as e:
+        log(f"Failed to check docker logs: {e}")
+    return broken_paths
+
+
 def build_sonarr_index() -> dict[str, ArrFileRef]:
     index: dict[str, ArrFileRef] = {}
     try:
@@ -267,6 +282,7 @@ def scan_root(
 ) -> list[BrokenStream]:
     root_path = root_cfg["path"]
     arr_type = root_cfg["arr"]
+    docker_playback_errors = check_docker_logs()
     issues: list[BrokenStream] = []
     if not os.path.isdir(root_path):
         return issues
@@ -282,11 +298,11 @@ def scan_root(
                 continue
             if EXTRA_RE.search(fname):
                 continue
-            full = os.path.normpath(os.path.join(dirpath, fname))
-            if not os.path.islink(full):
+            full_path = os.path.normpath(os.path.join(dirpath, fname))
+            if not os.path.islink(full_path):
                 continue
             try:
-                target = os.readlink(full)
+                target = os.readlink(full_path)
             except OSError:
                 continue
             if NZBDAV_IDS_PREFIX not in target and "/.ids/" not in target:
@@ -294,26 +310,33 @@ def scan_root(
 
             if min_age_sec > 0:
                 try:
-                    if now - os.lstat(full).st_mtime < min_age_sec:
+                    if now - os.lstat(full_path).st_mtime < min_age_sec:
                         continue
                 except OSError:
                     pass
 
             dav_id = extract_dav_id(target)
-            ok, reason = test_readable(full)
-            nzbdav_msg = nzbdav_bad.get(dav_id or "", "") if dav_id else ""
+            
+            # 1) FUSE test
+            ok, reason = test_readable(full_path)
 
-            if ok and not nzbdav_msg:
+            # 2) DB health test
+            nzbdav_msg = None
+            if ok and dav_id and dav_id in nzbdav_bad:
+                ok = False
+                reason = "nzbdav_unhealthy"
+                nzbdav_msg = nzbdav_bad[dav_id]
+
+            # 3) Docker playback error test
+            if ok and full_path in docker_playback_errors:
+                ok = False
+                reason = "playback_error_logged"
+                nzbdav_msg = "Missing articles or timeouts detected during playback"
+
+            if ok:
                 continue
 
-            if not ok:
-                fail_reason = reason
-            elif nzbdav_msg:
-                fail_reason = "nzbdav_unhealthy"
-            else:
-                continue
-
-            ref = arr_index.get(full) or arr_index.get(os.path.normpath(full))
+            ref = arr_index.get(full_path) or arr_index.get(os.path.normpath(full_path))
             if title_filters and ref:
                 if not any(f.lower() in ref.title.lower() for f in title_filters):
                     continue
