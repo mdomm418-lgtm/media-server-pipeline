@@ -100,6 +100,8 @@ def log(msg: str) -> None:
 def container_to_host(path: str) -> str:
     if path.startswith(CONTAINER_PREFIX + "/"):
         return HOST_PREFIX + path[len(CONTAINER_PREFIX) :]
+    if path.startswith("/content/"):
+        return HOST_PREFIX + path[len("/content") :]
     return path
 
 
@@ -179,18 +181,27 @@ def load_nzbdav_unhealthy() -> dict[str, str]:
 
 
 def check_docker_logs() -> set[str]:
-    """Parse docker logs to find files that threw errors during actual playback."""
-    broken_paths = set()
+    """Parse docker logs to find dav_ids of files that threw errors during actual playback."""
+    broken_dav_ids = set()
+    raw_paths = set()
     try:
         proc = subprocess.run(["docker", "logs", "--since", "24h", "nzbdav"], capture_output=True, text=True)
         for line in proc.stderr.splitlines() + proc.stdout.splitlines():
             if "has missing articles" in line or "Timeout reading from NNTP stream" in line or "Response Content-Length mismatch" in line:
                 m = re.search(r"File `([^`]+)`", line)
                 if m:
-                    broken_paths.add(container_to_host(m.group(1)))
+                    raw_paths.add(m.group(1))
+                    
+        if raw_paths and os.path.isfile(NZBDAV_DB):
+            conn = sqlite3.connect(NZBDAV_DB)
+            for raw_path in raw_paths:
+                row = conn.execute("SELECT Id FROM DavItems WHERE Path = ?", (raw_path,)).fetchone()
+                if row and row[0]:
+                    broken_dav_ids.add(str(row[0]).lower())
+            conn.close()
     except Exception as e:
         log(f"Failed to check docker logs: {e}")
-    return broken_paths
+    return broken_dav_ids
 
 
 def build_sonarr_index() -> dict[str, ArrFileRef]:
@@ -328,7 +339,7 @@ def scan_root(
                 nzbdav_msg = nzbdav_bad[dav_id]
 
             # 3) Docker playback error test
-            if ok and full_path in docker_playback_errors:
+            if ok and dav_id and dav_id in docker_playback_errors:
                 ok = False
                 reason = "playback_error_logged"
                 nzbdav_msg = "Missing articles or timeouts detected during playback"
@@ -342,16 +353,16 @@ def scan_root(
                     continue
             if title_filters and not ref:
                 # Match folder name for untracked broken symlinks
-                if not any(f.lower() in full.lower() for f in title_filters):
+                if not any(f.lower() in full_path.lower() for f in title_filters):
                     continue
 
             issues.append(
                 BrokenStream(
-                    path=full,
+                    path=full_path,
                     root=root_cfg["label"],
                     symlink_target=target,
                     dav_id=dav_id,
-                    reason=fail_reason,
+                    reason=reason,
                     arr=ref,
                     nzbdav_message=nzbdav_msg or None,
                 )
