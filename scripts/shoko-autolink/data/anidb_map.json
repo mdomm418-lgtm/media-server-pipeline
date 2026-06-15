@@ -29,8 +29,21 @@
     "tvdb_id": 329822
   },
   "Mushoku Tensei - Jobless Reincarnation::S01": {
-    "anidb_id": 14758,
-    "note": "Part 1"
+    "note": "Season 1 (split cour)",
+    "ranges": [
+      {
+        "start": 1,
+        "end": 11,
+        "anidb_id": 14758,
+        "episode_offset": 0
+      },
+      {
+        "start": 12,
+        "end": 23,
+        "anidb_id": 15954,
+        "episode_offset": -11
+      }
+    ]
   },
   "Kill la Kill::S01": {
     "anidb_id": 9875,
@@ -49,14 +62,14 @@
   "Sword Art Online::S04": {
     "ranges": [
       {
-        "start": 75,
-        "end": 86,
+        "start": 1,
+        "end": 12,
         "anidb_id": 14796,
         "episode_offset": -74
       },
       {
-        "start": 87,
-        "end": 97,
+        "start": 13,
+        "end": 23,
         "anidb_id": 15146,
         "episode_offset": -86
       }
@@ -66,14 +79,14 @@
   "That Time I Got Reincarnated as a Slime::S02": {
     "ranges": [
       {
-        "start": 25,
-        "end": 36,
+        "start": 1,
+        "end": 12,
         "anidb_id": 14767,
         "episode_offset": -24
       },
       {
-        "start": 37,
-        "end": 48,
+        "start": 13,
+        "end": 24,
         "anidb_id": 15456,
         "episode_offset": -36
       }
@@ -87,14 +100,14 @@
   "Haikyu!!::S04": {
     "ranges": [
       {
-        "start": 61,
-        "end": 73,
+        "start": 1,
+        "end": 13,
         "anidb_id": 14552,
         "episode_offset": -60
       },
       {
-        "start": 74,
-        "end": 85,
+        "start": 14,
+        "end": 25,
         "anidb_id": 15283,
         "episode_offset": -73
       }
@@ -165,18 +178,35 @@
   "Fire Force::S03": {
     "ranges": [
       {
-        "start": 49,
-        "end": 72,
+        "start": 1,
+        "end": 24,
         "anidb_id": 17420,
         "episode_offset": -48
       },
       {
-        "start": 73,
-        "end": 96,
+        "start": 25,
+        "end": 48,
         "anidb_id": 18742,
         "episode_offset": -72
       }
     ],
     "note": "Season 3 (split cour)"
+  },
+  "Mushoku Tensei - Jobless Reincarnation::S02": {
+    "ranges": [
+      {
+        "start": 1,
+        "end": 12,
+        "anidb_id": 17236,
+        "episode_offset": -25
+      },
+      {
+        "start": 13,
+        "end": 24,
+        "anidb_id": 18104,
+        "episode_offset": -37
+      }
+    ],
+    "note": "Season 2 (split cour)"
   }
 }
