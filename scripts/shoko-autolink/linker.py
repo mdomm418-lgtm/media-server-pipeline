@@ -316,14 +316,12 @@ class Linker:
         if season_for_resolve is None:
             season_for_resolve = 1
 
-        ep_for_candidates = (
-            parsed.episode
-            if parsed
-            else int(
-                sonarr_ep.get("episodeNumber")
-                or sonarr_ep.get("absoluteEpisodeNumber")
-                or 0
-            )
+        abs_num = sonarr_ep.get("absoluteEpisodeNumber")
+        ep_for_candidates = int(
+            abs_num
+            or (parsed.episode if parsed else 0)
+            or sonarr_ep.get("episodeNumber")
+            or 0
         )
         candidates = self.resolver.resolve_candidates(
             folder, batch.tvdb_id, season_for_resolve, ep_for_candidates

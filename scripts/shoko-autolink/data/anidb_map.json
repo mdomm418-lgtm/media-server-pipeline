@@ -39,7 +39,7 @@
       },
       {
         "start": 12,
-        "end": 23,
+        "end": 24,
         "anidb_id": 15954,
         "episode_offset": -11
       }
@@ -62,14 +62,14 @@
   "Sword Art Online::S04": {
     "ranges": [
       {
-        "start": 1,
-        "end": 12,
+        "start": 75,
+        "end": 86,
         "anidb_id": 14796,
         "episode_offset": -74
       },
       {
-        "start": 13,
-        "end": 23,
+        "start": 87,
+        "end": 97,
         "anidb_id": 15146,
         "episode_offset": -86
       }
@@ -79,14 +79,14 @@
   "That Time I Got Reincarnated as a Slime::S02": {
     "ranges": [
       {
-        "start": 1,
-        "end": 12,
+        "start": 25,
+        "end": 36,
         "anidb_id": 14767,
         "episode_offset": -24
       },
       {
-        "start": 13,
-        "end": 24,
+        "start": 37,
+        "end": 48,
         "anidb_id": 15456,
         "episode_offset": -36
       }
@@ -100,14 +100,14 @@
   "Haikyu!!::S04": {
     "ranges": [
       {
-        "start": 1,
-        "end": 13,
+        "start": 61,
+        "end": 73,
         "anidb_id": 14552,
         "episode_offset": -60
       },
       {
-        "start": 14,
-        "end": 25,
+        "start": 74,
+        "end": 85,
         "anidb_id": 15283,
         "episode_offset": -73
       }
@@ -178,14 +178,14 @@
   "Fire Force::S03": {
     "ranges": [
       {
-        "start": 1,
-        "end": 24,
+        "start": 49,
+        "end": 72,
         "anidb_id": 17420,
         "episode_offset": -48
       },
       {
-        "start": 25,
-        "end": 48,
+        "start": 73,
+        "end": 96,
         "anidb_id": 18742,
         "episode_offset": -72
       }
@@ -195,18 +195,114 @@
   "Mushoku Tensei - Jobless Reincarnation::S02": {
     "ranges": [
       {
-        "start": 1,
-        "end": 12,
+        "start": 26,
+        "end": 37,
         "anidb_id": 17236,
         "episode_offset": -25
       },
       {
-        "start": 13,
-        "end": 24,
+        "start": 38,
+        "end": 49,
         "anidb_id": 18104,
         "episode_offset": -37
       }
     ],
     "note": "Season 2 (split cour)"
+  },
+  "Komi Can't Communicate::S01": {
+    "tvdb_id": 402412,
+    "ranges": [
+      {
+        "start": 1,
+        "end": 12,
+        "anidb_id": 16300,
+        "episode_offset": 0
+      },
+      {
+        "start": 13,
+        "end": 24,
+        "anidb_id": 17072,
+        "episode_offset": -12
+      }
+    ],
+    "note": "Season 1 includes 2022 cour as absolute episodes 13-24"
+  },
+  "SPY x FAMILY::S01": {
+    "tvdb_id": 405920,
+    "ranges": [
+      {
+        "start": 1,
+        "end": 12,
+        "anidb_id": 16947,
+        "episode_offset": 0
+      },
+      {
+        "start": 13,
+        "end": 25,
+        "anidb_id": 17061,
+        "episode_offset": -12
+      }
+    ],
+    "note": "Season 1 split cour"
+  },
+  "Is It Wrong to Try to Pick Up Girls in a Dungeon!::S04": {
+    "tvdb_id": 289882,
+    "ranges": [
+      {
+        "start": 38,
+        "end": 48,
+        "anidb_id": 16032,
+        "episode_offset": -37
+      },
+      {
+        "start": 49,
+        "end": 59,
+        "anidb_id": 17652,
+        "episode_offset": -48
+      }
+    ],
+    "note": "Familia Myth IV split cour"
+  },
+  "SAKAMOTO DAYS::S01": {
+    "tvdb_id": 423732,
+    "ranges": [
+      {
+        "start": 1,
+        "end": 11,
+        "anidb_id": 18654,
+        "episode_offset": 0
+      },
+      {
+        "start": 12,
+        "end": 22,
+        "anidb_id": 18984,
+        "episode_offset": -11
+      }
+    ],
+    "note": "Season 1 split cour; overrides bad learned anidb 18831"
+  },
+  "Bleach::S17": {
+    "tvdb_id": 74796,
+    "ranges": [
+      {
+        "start": 367,
+        "end": 379,
+        "anidb_id": 15449,
+        "episode_offset": -366
+      },
+      {
+        "start": 380,
+        "end": 392,
+        "anidb_id": 17765,
+        "episode_offset": -379
+      },
+      {
+        "start": 393,
+        "end": 405,
+        "anidb_id": 18220,
+        "episode_offset": -392
+      }
+    ],
+    "note": "Thousand-Year Blood War split cours; Sonarr files use absolute episode numbers"
   }
 }
