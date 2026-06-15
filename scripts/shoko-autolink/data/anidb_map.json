@@ -1,80 +1,12 @@
 {
-  "My Teen Romantic Comedy SNAFU": {
-    "anidb_id": 9310,
-    "note": "Season 1 cour; add S2 pin if split-cour"
-  },
-  "My Teen Romantic Comedy SNAFU::S02": {
-    "anidb_id": 9786,
-    "note": "Example split-cour override"
-  },
   "One Piece": {
     "anidb_id": 69,
-    "note": "Long-runner; Anime-Lists TVDB season mapping incomplete for Sonarr folders"
-  },
-  "Code Geass - Lelouch of the Rebellion::S01": {
-    "anidb_id": 4521,
-    "note": "bootstrap-map (anime-lists)"
-  },
-  "Code Geass - Lelouch of the Rebellion::S02": {
-    "anidb_id": 5373,
-    "note": "bootstrap-map (anime-lists)"
-  },
-  "Death Parade::S01": {
-    "anidb_id": 10905,
-    "note": "bootstrap-map (anime-lists)"
-  },
-  "Dorohedoro::S02": {
-    "anidb_id": 18397,
-    "note": "bootstrap-map (anime-lists)"
-  },
-  "Gals Can't Be Kind to Otaku!!::S01": {
-    "anidb_id": 19628,
-    "note": "bootstrap-map (anime-lists)"
-  },
-  "InuYasha::S01": {
-    "anidb_id": 144,
-    "note": "bootstrap-map (anime-lists-mapping)"
-  },
-  "JUJUTSU KAISEN::S02": {
-    "anidb_id": 17196,
-    "note": "bootstrap-map (anime-lists)"
-  },
-  "Solo Leveling::S01": {
-    "anidb_id": 17495,
-    "note": "bootstrap-map (anime-lists)"
-  },
-  "Solo Leveling::S02": {
-    "anidb_id": 18576,
-    "note": "bootstrap-map (anime-lists)"
-  },
-  "That Time I Got Reincarnated as a Slime::S03": {
-    "anidb_id": 17709,
-    "note": "bootstrap-map (anime-lists)"
-  },
-  "The Angel Next Door Spoils Me Rotten::S01": {
-    "anidb_id": 17108,
-    "note": "bootstrap-map (anime-lists)"
-  },
-  "The Angel Next Door Spoils Me Rotten::S02": {
-    "anidb_id": 18235,
-    "note": "bootstrap-map (anime-lists)"
-  },
-  "The Beginning After the End::S02": {
-    "anidb_id": 19381,
-    "note": "bootstrap-map (anime-lists)"
-  },
-  "The Warrior Princess and the Barbaric King::S01": {
-    "anidb_id": 18898,
-    "note": "bootstrap-map (anime-lists)"
-  },
-  "Yu Yu Hakusho::S01": {
-    "anidb_id": 312,
-    "note": "bootstrap-map (anime-lists-absolute)"
+    "note": "Long-runner"
   },
   "Attack on Titan::S04": {
     "anidb_id": 14977,
     "episode_offset": -75,
-    "note": "Final season AniDB ep 1-16, TVDB ep 76-91"
+    "note": "Final season"
   },
   "Dr. STONE::S04": {
     "anidb_id": 18336,
@@ -82,150 +14,169 @@
   },
   "Classroom of the Elite::S01": {
     "anidb_id": 13153,
-    "tvdb_id": 329822,
-    "note": "manual fix 2026-05-28"
+    "tvdb_id": 329822
   },
   "Classroom of the Elite::S02": {
     "anidb_id": 17208,
-    "tvdb_id": 329822,
-    "note": "manual fix 2026-05-28"
+    "tvdb_id": 329822
   },
   "Classroom of the Elite::S03": {
     "anidb_id": 17237,
-    "tvdb_id": 329822,
-    "note": "manual fix 2026-05-28"
+    "tvdb_id": 329822
   },
   "Classroom of the Elite::S04": {
     "anidb_id": 18844,
-    "tvdb_id": 329822,
-    "note": "manual fix 2026-05-28"
-  },
-  "Sword Art Online::S04": {
-    "anidb_id": 13561,
-    "episode_offset": -74,
-    "note": "Alicization War of Underworld"
+    "tvdb_id": 329822
   },
   "Mushoku Tensei - Jobless Reincarnation::S01": {
     "anidb_id": 14758,
     "note": "Part 1"
   },
-  "Mushoku Tensei - Jobless Reincarnation::S02": {
-    "anidb_id": 16476,
-    "note": "Part 2"
-  },
-  "Fate+Zero::S01": {
-    "anidb_id": 8160,
-    "note": "Cour 1"
-  },
-  "Fate+Zero::S02": {
-    "anidb_id": 9127,
-    "note": "Cour 2"
-  },
-  "SAKAMOTO DAYS::S01": {
-    "anidb_id": 18831,
-    "note": "Part 1"
-  },
-  "Haikyu!!::S01": {
-    "anidb_id": 10145,
+  "Kill la Kill::S01": {
+    "anidb_id": 9875,
     "note": "Season 1"
   },
-  "Haikyu!!::S02": {
-    "anidb_id": 10981,
+  "JUJUTSU KAISEN::S02": {
+    "anidb_id": 17196,
     "note": "Season 2"
   },
-  "Haikyu!!::S03": {
-    "anidb_id": 11590,
-    "note": "Karasuno vs Shiratorizawa"
+  "Solo Leveling::S01": {
+    "anidb_id": 17495
+  },
+  "Solo Leveling::S02": {
+    "anidb_id": 18576
+  },
+  "Sword Art Online::S04": {
+    "ranges": [
+      {
+        "start": 75,
+        "end": 86,
+        "anidb_id": 14796,
+        "episode_offset": -74
+      },
+      {
+        "start": 87,
+        "end": 97,
+        "anidb_id": 15146,
+        "episode_offset": -86
+      }
+    ],
+    "note": "Alicization War of Underworld (split cour)"
+  },
+  "That Time I Got Reincarnated as a Slime::S02": {
+    "ranges": [
+      {
+        "start": 25,
+        "end": 36,
+        "anidb_id": 14767,
+        "episode_offset": -24
+      },
+      {
+        "start": 37,
+        "end": 48,
+        "anidb_id": 15456,
+        "episode_offset": -36
+      }
+    ],
+    "note": "Season 2 (split cour)"
+  },
+  "That Time I Got Reincarnated as a Slime::S03": {
+    "anidb_id": 17709,
+    "note": "Season 3"
   },
   "Haikyu!!::S04": {
-    "anidb_id": 14787,
-    "note": "To the Top"
+    "ranges": [
+      {
+        "start": 61,
+        "end": 73,
+        "anidb_id": 14552,
+        "episode_offset": -60
+      },
+      {
+        "start": 74,
+        "end": 85,
+        "anidb_id": 15283,
+        "episode_offset": -73
+      }
+    ],
+    "note": "To the Top (split cour)"
   },
-  "86 - Eighty Six::S01": {
-    "anidb_id": 15988,
-    "note": "Cour 1"
+  "Haikyu!!::S01": {
+    "anidb_id": 10145
   },
-  "86 - Eighty Six::S02": {
-    "anidb_id": 16519,
-    "note": "Cour 2"
+  "Haikyu!!::S02": {
+    "anidb_id": 10981
+  },
+  "Haikyu!!::S03": {
+    "anidb_id": 11991
+  },
+  "Bungo Stray Dogs::S01": {
+    "ranges": [
+      {
+        "start": 1,
+        "end": 12,
+        "anidb_id": 11523,
+        "episode_offset": 0
+      },
+      {
+        "start": 13,
+        "end": 24,
+        "anidb_id": 11965,
+        "episode_offset": -12
+      }
+    ],
+    "note": "Season 1 (split cour)"
+  },
+  "Bungo Stray Dogs::S04": {
+    "anidb_id": 16965,
+    "episode_offset": -36,
+    "note": "S4"
+  },
+  "Bungo Stray Dogs::S05": {
+    "anidb_id": 17962,
+    "episode_offset": -49,
+    "note": "S5"
   },
   "Scissor Seven::S01": {
-    "anidb_id": 14682,
+    "anidb_id": 14288,
     "note": "Season 1"
   },
   "Scissor Seven::S02": {
-    "anidb_id": 15578,
+    "anidb_id": 15381,
     "note": "Season 2"
   },
   "Scissor Seven::S03": {
-    "anidb_id": 16447,
+    "anidb_id": 15961,
     "note": "Season 3"
   },
   "Scissor Seven::S04": {
-    "anidb_id": 17853,
+    "anidb_id": 17852,
     "note": "Season 4"
   },
-  "Scissor Seven::S05": {
-    "anidb_id": 0,
-    "note": "Season 5 (Placeholder ID, verify on AniDB)"
-  },
-  "Mushi-Shi::S01": {
-    "anidb_id": 2418,
-    "note": "Season 1"
-  },
-  "Mushi-Shi::S02": {
-    "anidb_id": 10162,
-    "note": "Zoku Shou"
-  },
-  "Devil May Cry (2025)::S01": {
-    "anidb_id": 18876,
-    "note": "2025 anime"
-  },
   "Fire Force::S01": {
-    "anidb_id": 14660,
+    "anidb_id": 14488,
     "note": "Season 1"
   },
   "Fire Force::S02": {
-    "anidb_id": 14776,
+    "anidb_id": 15335,
     "episode_offset": -24,
     "note": "Season 2"
   },
-  "Tokyo Ghoul::S01": {
-    "anidb_id": 10401,
-    "note": "Season 1"
-  },
-  "Tokyo Ghoul::S02": {
-    "anidb_id": 10868,
-    "note": "Root A"
-  },
-  "Pokémon::S18": {
-    "anidb_id": 12370,
-    "episode_offset": -943,
-    "note": "Sun & Moon (AniDB eps 1-43, TVDB absolute 944+)"
-  },
-  "Tower of God::S02": {
-    "anidb_id": 18321,
-    "episode_offset": -13,
-    "note": "S2 starts at AniDB ep 1, TVDB ep 14"
-  },
-  "BLUE LOCK::S02": {
-    "anidb_id": 18340,
-    "episode_offset": -24,
-    "note": "S2 starts at AniDB ep 1, TVDB ep 25"
-  },
-  "Ghost in the Shell - Stand Alone Complex::S02": {
-    "anidb_id": 1176,
-    "episode_offset": 0,
-    "note": "2nd GIG"
-  },
-  "Bungo Stray Dogs::S04": {
-    "anidb_id": 17201,
-    "episode_offset": -36,
-    "note": "S4 starts at AniDB ep 1"
-  },
-  "Bungo Stray Dogs::S05": {
-    "anidb_id": 17728,
-    "episode_offset": -49,
-    "note": "S5 starts at AniDB ep 1"
+  "Fire Force::S03": {
+    "ranges": [
+      {
+        "start": 49,
+        "end": 72,
+        "anidb_id": 17420,
+        "episode_offset": -48
+      },
+      {
+        "start": 73,
+        "end": 96,
+        "anidb_id": 18742,
+        "episode_offset": -72
+      }
+    ],
+    "note": "Season 3 (split cour)"
   }
 }

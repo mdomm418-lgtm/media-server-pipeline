@@ -219,7 +219,11 @@ class AnimeListsDB:
         return None
 
     def resolve_candidates(self, tvdb_id: int, season: int, episode: int | None = None) -> list[ResolveResult]:
-        """Ordered AniDB candidates for a TVDB season (for episode retry)."""
+        """Ordered AniDB candidates for a TVDB season (for episode retry).
+
+        When anime-lists has multiple same-season entries that resolve() can't
+        distinguish, they are included here with episode-range-aware confidence.
+        """
         primary = self.resolve(tvdb_id, season)
         seen: set[int] = set()
         out: list[ResolveResult] = []
@@ -228,6 +232,34 @@ class AnimeListsDB:
             seen.add(primary.anidb_id)
 
         entries = self.entries_for_tvdb(tvdb_id)
+
+        # Same-season duplicates that resolve() couldn't pick between.
+        # Include them as candidates, preferring entries whose mapping
+        # start/end range covers the requested episode.
+        same_season = [
+            e for e in entries
+            if isinstance(e.default_tvdb_season, int)
+            and e.default_tvdb_season == season
+            and e.anidb_id not in seen
+        ]
+        for e in same_season:
+            offset = 0
+            confidence = 0.8
+            source = "anime-lists-same-season"
+            if episode is not None:
+                for m in e.mappings:
+                    if m.tvdb_season == season:
+                        offset = m.offset
+                        if m.start is not None and m.start <= episode:
+                            if m.end is None or m.end >= episode:
+                                confidence = 0.85
+                                source = "anime-lists-same-season-range"
+                                break
+            out.append(ResolveResult(e.anidb_id, confidence, source, e, episode_offset=offset))
+            seen.add(e.anidb_id)
+
+        # Higher-season alt entries (for series where AniDB splits cours into
+        # separate seasons while TVDB keeps one continuous season).
         for e in entries:
             if e.anidb_id in seen:
                 continue

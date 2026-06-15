@@ -340,24 +340,46 @@ class Linker:
 
         ep_type = "Special" if season == 0 or (parsed and parsed.episode_type == "Special") else "Episode"
 
+        candidate_details: list[dict[str, Any]] = []
         for resolved in candidates:
+            detail: dict[str, Any] = {
+                "anidb_id": resolved.anidb_id,
+                "source": resolved.source,
+                "offset": resolved.episode_offset,
+                "confidence": resolved.confidence,
+            }
             if resolved.confidence < self.min_resolve and resolved.source not in (
                 "manual-map",
                 "manual-map-season",
             ):
+                detail["skip_reason"] = "low_confidence"
+                candidate_details.append(detail)
                 continue
             shoko_series_id, ep_map = self._ensure_anidb_series(resolved.anidb_id)
+            detail["shoko_series_id"] = shoko_series_id
+            detail["ep_map_empty"] = ep_map is None
             if not shoko_series_id or ep_map is None:
+                detail["skip_reason"] = "no_shoko_series" if not shoko_series_id else "no_ep_map"
+                candidate_details.append(detail)
                 continue
 
             ep_num = self._shoko_episode_number(
                 sonarr_ep, season, series_type, resolved.source
             )
-            # Apply episode offset from mapping (translates TVDB ep# to AniDB ep#)
+            # Apply episode offset from mapping (translates TVDB ep# to AniDB ep#).
+            # When an offset is present, it's always relative to absolute/continuous
+            # TVDB numbering, so use absoluteEpisodeNumber (not season-relative).
             if resolved.episode_offset:
-                ep_num = ep_num + resolved.episode_offset
+                abs_num = sonarr_ep.get("absoluteEpisodeNumber")
+                if abs_num is not None:
+                    ep_num = int(abs_num) + resolved.episode_offset
+                else:
+                    ep_num = ep_num + resolved.episode_offset
+            detail["computed_ep_num"] = ep_num
             shoko_ep_id = self._match_shoko_episode(ep_map, sonarr_ep, ep_type, ep_num)
             if shoko_ep_id is None:
+                detail["skip_reason"] = "episode_not_in_map"
+                candidate_details.append(detail)
                 continue
 
             learn_key = season_key(folder, season_for_resolve)
@@ -402,6 +424,7 @@ class Linker:
                 "season": season,
                 "episode": ep_for_candidates,
                 "ep_type": ep_type,
+                "candidates": candidate_details,
             },
         )
         return LinkResult(vf.file_id, vf.relative_path, False, reason="episode_not_found")
