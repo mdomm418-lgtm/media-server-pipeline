@@ -16,6 +16,9 @@
 */15 * * * * flock -n /home/admin/stage-import-tv.lock /usr/bin/python3 /home/admin/stage_sonarr_imports_tv.py --execute >> /home/admin/stage-import-tv.log 2>&1
 */10 * * * * flock -n /home/admin/sonarr-import-rescue.lock /usr/bin/python3 /home/admin/sonarr_import_rescue.py --execute >> /home/admin/sonarr-import-rescue.log 2>&1
 
+# Anime auto-sorter — moves miscategorized anime /data/tv → /data/anime (offset from Jellyfin refresh)
+7,22,37,52 * * * * flock -n /home/admin/anime-auto-sorter/.lock /usr/bin/python3 /home/admin/anime_auto_sorter.py --execute >> /home/admin/anime-auto-sorter/anime-auto-sorter.log 2>&1
+
 # NzbDAV Usenet auth-storm circuit breaker (every 5 min)
 */5 * * * * flock -n /home/admin/nzbdav-auth-guard.lock /usr/bin/python3 /home/admin/nzbdav_auth_guard.py --execute >> /home/admin/nzbdav-auth-guard.log 2>&1
 

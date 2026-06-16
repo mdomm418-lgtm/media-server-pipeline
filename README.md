@@ -29,11 +29,14 @@ graph TD
     %% Watchdogs
     AuthGuard["🛡️ nzbdav_auth_guard<br/>(Circuit Breaker)"]:::watchdog
     MediaMonitor["🛡️ media_stack_monitor<br/>(DB Protector)"]:::watchdog
+    AnimeSorter["🛡️ anime_auto_sorter<br/>(Anime Relocator)"]:::watchdog
 
     %% Flow
     ListSync -- "Adds Shows/Movies" --> SonarrRadarr
     SonarrRadarr -- "Searches & Requests" --> NzbDAV
     NzbDAV -- "Streams files" --> Usenet
+    
+    AnimeSorter -. "Moves anime /data/tv → /data/anime" .-> SonarrRadarr
     
     AuthGuard -. "Monitors & Halts on Auth Storms" .-> NzbDAV
     
@@ -54,6 +57,8 @@ graph TD
 
 ### 1. Discovery & Sync (`ListSync`)
 The pipeline begins with automated list synchronization. Shows, movies, and anime added to lists (Trakt, MDblist, AniDB, etc.) are automatically synced to **[Sonarr](https://github.com/Sonarr/Sonarr/)** and **[Radarr](https://github.com/Radarr/Radarr)** using **[ListSync](https://github.com/Woahai321/list-sync)**.
+
+> **Anime miscategorization:** MDBList anime lists are synced as `media_type=tv`, so Seerr/Overseerr routes them to Sonarr's default `/data/tv` root folder — even though Sonarr correctly detects `seriesType=anime`. The **`anime_auto_sorter.py`** cron script reactively relocates these to `/data/anime` so Jellyfin's Anime library (via Shoko/Shokofin) picks them up. See [docs/anime-auto-sorter.md](docs/anime-auto-sorter.md) for full details.
 
 ### 2. Management & Search (`Sonarr` / `Radarr`)
 Sonarr and Radarr serve as the central library managers. They search indexers for releases and send them to the download client. However, instead of downloading files locally to a disk, the pipeline utilizes a virtual filesystem approach.
@@ -95,6 +100,7 @@ The `scripts/` directory contains all the specialized automation that glues this
 - **`sonarr_import_rescue.py`**: Automatically rescues stuck imports using the Manual Import API.
 - **`stage_sonarr_imports_tv.py`**: Handles staging and parsing of obfuscated Usenet TV imports.
 - **`backlog_fetcher.py`**: Throttles and manages backlog fetching to prevent API rate limits and indexer bans.
+- **`anime_auto_sorter.py`**: Reactive safety net that detects anime misfiled under Sonarr's `/data/tv` root (from ListSync/Seerr routing) and moves them to `/data/anime` with symlink-safe renames, then triggers Shoko import + a guarded Jellyfin refresh. See [docs/anime-auto-sorter.md](docs/anime-auto-sorter.md).
 
 ### Shoko Autolink
 The `shoko-autolink/` directory contains the complete pipeline for bridging Sonarr and Shoko:
@@ -115,7 +121,8 @@ The `shoko-autolink/` directory contains the complete pipeline for bridging Sona
 
 1. Copy `.env.example` to `.env` and fill in your API keys and configuration.
 2. For Shoko Autolink, copy `shoko-autolink/config.example.yaml` to `shoko-autolink/config.yaml`.
-3. Review `crontab.example` to see how these scripts are scheduled and executed in a production environment using `flock` to prevent overlapping runs.
+3. For Anime Auto-Sorter, ensure Shoko credentials are in `/home/admin/shoko-autolink/.env` and create the state directory (`mkdir -p ~/anime-auto-sorter`). See [docs/anime-auto-sorter.md](docs/anime-auto-sorter.md).
+4. Review `crontab.example` to see how these scripts are scheduled and executed in a production environment using `flock` to prevent overlapping runs.
 
 ---
 
